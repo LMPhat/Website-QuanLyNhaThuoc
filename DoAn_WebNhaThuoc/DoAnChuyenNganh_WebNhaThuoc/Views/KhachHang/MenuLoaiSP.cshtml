@@ -1,0 +1,10 @@
+﻿@using DoAnChuyenNganh_WebNhaThuoc.Models;
+@model List<DanhMucSP>
+
+
+@foreach (var item in Model)
+{
+    <li>
+        <a class="u-black u-button-style u-nav-link" href="/KhachHang/HTSP_TheoLoai/@item.MaDM">@item.TenDM</a>
+    </li>
+}

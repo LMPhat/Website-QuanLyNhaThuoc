@@ -1,0 +1,131 @@
+﻿
+@{
+    ViewBag.Title = "HoaDon";
+    Layout = "~/Views/Shared/_LayoutQuanLy.cshtml";
+
+    var nfi = new System.Globalization.NumberFormatInfo { NumberGroupSeparator = "." };
+}
+
+@using DoAnChuyenNganh_WebNhaThuoc.Models;
+@model List<HoaDon>
+
+<body>
+    <section style="margin-top:-100px;">
+        @if (ViewBag.ErrorMessage != null)
+        {
+            <div class="alert alert-danger">
+                @ViewBag.ErrorMessage
+            </div>
+        }
+        <div style="margin-bottom:30px;" class="d-flex align-items-center">
+            <h2 class="text-dark font-weight-bold">Danh sách hóa đơn</h2>
+        </div>
+        <div class="u-expanded-width u-table u-table-responsive u-table-1">
+            <table class="table table-bordered">
+                <colgroup>
+                    <col width="3.2%">
+                    <col width="12.8%">
+                    <col width="9.5%">
+                    @*<col width="19.3%">*@
+                    @*<col width="5.5%">*@
+                    <col width="8.6%">
+                    <col width="10%">
+                    <col width="8.4%">
+                    <col width="9.4%">
+                    <col width="8.9%">
+                    <col width="8.8%">
+                </colgroup>
+                <thead class="table-primary text-dark" style="text-align:center;">
+                    <tr style="height: 85px;">
+                        <th class="u-align-center u-border-1 u-border-grey-30 u-custom-font u-font-oswald u-table-cell">Mã Hóa Đơn</th>
+                        <th class="u-border-1 u-border-grey-30 u-custom-font u-font-oswald u-table-cell u-table-cell-2">Tên Khách Hàng</th>
+                        <th class="u-border-1 u-border-grey-30 u-custom-font u-font-oswald u-table-cell u-table-cell-3">Tên Nhân Viên</th>
+                        <th class="u-border-1 u-border-grey-30 u-custom-font u-font-oswald u-table-cell u-table-cell-5">Ngày Lập</th>
+                        <th class="u-border-1 u-border-grey-30 u-custom-font u-font-oswald u-table-cell u-table-cell-8">Địa Chỉ</th>
+                        <th class="u-border-1 u-border-grey-30 u-custom-font u-font-oswald u-table-cell u-table-cell-6">Tổng Tiền</th>
+                        <th class="u-border-1 u-border-grey-30 u-custom-font u-font-oswald u-table-cell u-table-cell-9">Phương Thức</th>
+                        <th class="u-border-1 u-border-grey-30 u-custom-font u-font-oswald u-table-cell u-table-cell-7">Trạng Thái</th>
+                        <th class="u-border-1 u-border-grey-30 u-custom-font u-font-oswald u-table-cell u-table-cell-10"></th>
+                    </tr>
+                </thead>
+                @foreach (var item in Model)
+                {
+                    <tbody class="u-align-center u-custom-font u-font-oswald u-table-body text-black">
+                        <tr style="height: 100px;">
+                            <td class="u-align-left u-border-1 u-border-grey-30 u-first-column u-table-cell u-table-cell-9">@item.SoHD</td>
+                            <td class="u-align-left u-border-1 u-border-grey-30 u-table-cell u-table-cell-12">
+                                @item.KhachHang.TenKH
+                            </td>
+                            <td class="u-align-left u-border-1 u-border-grey-30 u-table-cell u-table-cell-14">
+                                @{
+                                    if(item.MaNV == null)
+                                    {
+                                        <p>Online</p>
+                                    }
+                                    else
+                                    {
+                                        @item.NhanVien.TenNV
+                                    }
+                                }
+                            </td>
+                            <td class="u-border-1 u-border-grey-30 u-table-cell u-table-cell-15">@item.NgayLap</td>
+                            <td class="u-border-1 u-border-grey-30 u-table-cell u-table-cell-15">@item.DiaChi</td>
+                            <td class="u-align-right u-border-1 u-border-grey-30 u-table-cell u-table-cell-16 ">@item.TongTien.Value.ToString("#,##", nfi) VND</td>
+                            <td class="u-align-left u-border-1 u-border-grey-30 u-table-cell u-table-cell-18 u-table-cell-9">
+                                @{
+                                    if ((bool)item.PTThanhToan)
+                                    {
+                                        <span>Thanh toán online</span>
+                                    }
+                                    else
+                                    {
+                                        <span>Thanh toán tiền mặt</span>
+                                    }
+                                }
+                            </td>
+
+                            <td class="u-align-left u-border-1 u-border-grey-30 u-table-cell u-table-cell-18 u-table-cell-9">
+                                @{
+                                    if ((bool)item.TrangThai)
+                                    {
+                                        <div><a href="#" class="btn btn-success" style="margin-bottom: 10px; width: 110px;">Đã giao</a></div>
+                                    }
+                                    else
+                                    {
+                                        <div><a href="/QuanLy/CapNhatTrangThai_HD/@item.SoHD" class="btn btn-warning" style="margin-bottom: 10px; width: 110px;">Đang giao</a></div>
+                                    }
+                                }
+                            </td>
+
+                            <td class="text-center">
+                                <div><a href="/QuanLy/ChiTietHD/@item.SoHD" class="btn btn-secondary" style="margin-bottom:10px;">
+                                         <i class="icon icon-eye"></i>
+                                    </a></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                }
+            </table>
+
+        </div>
+    </section>
+</body>
+
+
+@{
+    if (TempData["LoginMessage"] == "2")
+    {
+        <script>
+            alert("Chỉnh sửa trạng thái thất bại.");
+        </script>
+    }
+    else
+    {
+        if(TempData["LoginMessage"] == "1")
+        {
+            <script>
+                alert("Chỉnh sửa trạng thái thành công.");
+            </script>
+        }
+    }
+}

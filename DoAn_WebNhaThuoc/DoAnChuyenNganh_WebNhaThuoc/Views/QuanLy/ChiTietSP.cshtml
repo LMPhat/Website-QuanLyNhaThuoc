@@ -1,0 +1,110 @@
+﻿
+@{
+    ViewBag.Title = "ChiTietSP";
+    Layout = "~/Views/Shared/_LayoutQuanLy.cshtml";
+    
+    ChiTietSanPham sp = ViewBag.masp;
+}
+
+@using DoAnChuyenNganh_WebNhaThuoc.Models;
+@model SanPham
+
+<body>
+    <div class="site-section" style="margin-top:-150px;">
+        <div class="container">
+            <div class="row" style="margin-top:5%;">
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active text-black" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <table class="table table-bordered">
+                            <thead>
+                            <th colspan="2"> <b>Thông tin chi tiết sản phẩm <span style="font-style:italic;"> @sp.SanPham.TenSP </span></b></th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td width="130">Thành phần:</td>
+                                    <td>@sp.ThanhPhan</td>
+                                </tr>
+                                <tr>
+                                    <td>Công dụng:</td>
+                                    <td>@sp.CongDung</td>
+                                </tr>
+                                <tr>
+                                    <td>Lưu ý:</td>
+                                    <td>@sp.LuuY</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <a href="#" class="btn btn-secondary" style="margin-bottom:10px;"
+                                           data-toggle="modal" data-target="#updateModal-@sp.MaSP.Replace(" ", "-").Replace("#", "")" data-maloai="@sp.MaSP">Cập Nhật</a>
+                                        <!-- Modal cho sản phẩm cụ thể -->
+                                        <form method="post" action="/QuanLy/SuaSP" enctype="multipart/form-data">
+                                            <div class="modal fade" style="margin-top:60px;" id="updateModal-@sp.MaSP.Replace(" ", "-").Replace("#", "")" data-maloai="@sp.MaSP" tabindex="-1" role="dialog" aria-labelledby="addProductModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="addProductModalLabel">Cập Nhật Chi Tiết Sản Phẩm</h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body text-xl-left" style="color:gray;">
+                                                            <!-- Hiển thị thông tin sản phẩm -->
+                                                            <p> Mã Sản Phẩm: <span style="color:black;"> @sp.MaSP </span></p>
+                                                            <input type="hidden" name="MaSP" value="@sp.MaSP">
+                                                            <input type="hidden" name="MaDM" value="@sp.SanPham.MaDM">
+                                                            <input type="hidden" name="TenSP" value="@sp.SanPham.TenSP">
+                                                            <p> Tên Sản Phẩm: <span style="color:black;"> @sp.SanPham.TenSP </span></p>
+                                                            
+                                                            <div class="editor-label font-weight-bold">
+                                                                Thành Phần
+                                                            </div>
+                                                            <div class="editor-field">
+                                                                @*<input type="text" name="ThanhPhan" value="@sp.ThanhPhan" placeholder="" required="" />*@
+                                                                <textarea name="ThanhPhan" placeholder="" required="" style="width:90%; height: 100px;">@sp.ThanhPhan</textarea> 
+                                                                @Html.ValidationMessage("ThanhPhan", "", new { @class = "text-danger" })
+                                                            </div>
+                                                            <div class="editor-label font-weight-bold">
+                                                                Công Dụng
+                                                            </div>
+                                                            <div class="editor-field">
+                                                                @*<input type="text" name="CongDung" value="@sp.CongDung" placeholder="" required="" />*@
+                                                                <textarea name="CongDung" placeholder="" required="" style="width:90%; height: 100px;">@sp.CongDung</textarea>
+                                                                @Html.ValidationMessage("CongDung", "", new { @class = "text-danger" })
+                                                            </div>
+                                                            <div class="editor-label font-weight-bold">
+                                                                Lưu Ý
+                                                            </div>
+                                                            <div class="editor-field">
+                                                                @*<input type="text" name="LuuY" value="@sp.LuuY" placeholder="" required="" />*@
+                                                                <textarea name="LuuY" placeholder="" required="" style="width:90%; height: 70px;">@sp.LuuY</textarea>
+                                                                @Html.ValidationMessage("LuuY", "", new { @class = "text-danger" })
+                                                            </div>
+
+                                                            <div style="margin-top:-20px;">
+                                                                <input type="hidden" id="true" name="TrangThai" value="true" @(sp.SanPham.TrangThai == true ? "checked" : "") />
+                                                               @* <label for="true"> <span style="color:black;">Đang kinh doanh</span></label>*@
+                                                                <input type="hidden" id="false" name="TrangThai" value="false" @(sp.SanPham.TrangThai == false ? "checked" : "") />
+                                                                @*<label for="fale"><span style="color:black;">Ngừng kinh doanh</span></label>*@
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                                                            <button type="submit" class="btn btn-danger">Lưu</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+

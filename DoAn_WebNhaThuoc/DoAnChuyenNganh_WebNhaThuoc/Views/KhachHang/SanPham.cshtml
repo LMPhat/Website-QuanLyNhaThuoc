@@ -1,0 +1,87 @@
+﻿@{
+    ViewBag.Title = "SanPham";
+    Layout = "~/Views/Shared/_LayoutKhachHang.cshtml";
+
+    var nfi = new System.Globalization.NumberFormatInfo { NumberGroupSeparator = "." };
+}
+
+@*@using DoAnChuyenNganh_WebNhaThuoc.Models;
+    @model List<SanPham>*@
+@model PagedList.IPagedList<DoAnChuyenNganh_WebNhaThuoc.Models.SanPham>
+@using PagedList.Mvc;
+@helper Truncate(string input)
+{
+    if (!input.Contains("-"))
+    {
+        @input
+    }
+    else
+    {
+
+        var truncatedString = input.Substring(0, input.IndexOf("-"));
+        @truncatedString<text></text>
+    }
+}
+
+<style>
+    .pagination-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .PagedList-skipToPrevious, .PagedList-skipToNext, .PagedList-skipToLast, .PagedList-skipToFirst {
+        width: auto !important;
+    }
+
+    .pagination > li {
+        margin-left: 4px;
+        width: 40px;
+        border-radius: 5px;
+        text-align: center;
+        background-color: #d3d3d3d3;
+    }
+
+        .pagination > li > a {
+            display: block;
+            width: 100%;
+            border-radius: 5px;
+            padding: 4px 8px;
+            color: black;
+        }
+
+            .pagination > li > a:hover {
+                background-color: blue;
+                color: white;
+            }
+</style>
+<body>
+    <div class="container">
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-sm-6 col-lg-4 text-center item mb-4">
+                    <a href="/KhachHang/ChiTietSP/@item.MaSP"> <img src="/HinhAnh/@item.HinhAnh" alt="Image" width="200"></a>
+                    <h3 class="text-dark"><a href="/KhachHang/ChiTietSP/@item.MaSP">@Truncate(@item.TenSP)</a></h3>
+                    <p class="price" style="font-size:18px;">@item.GiaBan.ToString("#,##", nfi) VND</p>
+                </div>
+            }
+        </div>
+        <div>
+            @if (ViewBag.Param != null)
+            {
+                @Html.PagedListPager(Model, page => Url.Action(@ViewBag.URL,
+ new { page, tensp = ViewBag.Param }), new PagedListRenderOptions { MaximumPageNumbersToDisplay = 5 })
+            }
+            else
+            {
+                @Html.PagedListPager(Model, page => Url.Action(@ViewBag.URL,
+ new { page }), new PagedListRenderOptions { MaximumPageNumbersToDisplay = 5 })
+            }
+
+
+        </div>
+
+    </div>
+
+</body>
+

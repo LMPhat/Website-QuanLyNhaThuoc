@@ -1,0 +1,309 @@
+﻿@model DoAnChuyenNganh_WebNhaThuoc.Models.ChiTietPN
+@using DoAnChuyenNganh_WebNhaThuoc.Models;
+@{
+    ViewBag.Title = "ThemPN";
+    Layout = "~/Views/Shared/_LayoutQuanLy.cshtml";
+
+    var nfi = new System.Globalization.NumberFormatInfo { NumberGroupSeparator = "." };
+
+    List<SanPham> dssp = ViewBag.masp;
+    List<NhaCungCap> dsncc = ViewBag.mancc;
+
+}
+<style>
+    .fixed-header {
+        position: sticky;
+        top: 0;
+        background-color: #f8f9fa; /* Màu nền của thead */
+        z-index: 1000; /* Z-index để đảm bảo hiển thị phía trên các phần tử khác */
+    }
+
+</style>
+
+<link href="~/bootstrap/css/bootstrap.css" rel="stylesheet" />
+
+<div class="container">
+    @if (ViewBag.ErrorMessage != null)
+    {
+        <div class="alert alert-danger">
+            @ViewBag.ErrorMessage
+        </div>
+    }
+        
+    <h2 class="text-dark font-weight-bold" style="margin-top:-10%;">LẬP PHIẾU NHẬP</h2> <br />
+    <h3 class="h3 text-black">
+        Nhà Cung Cấp
+    </h3> 
+    <div class="editor-field">
+        <select id="MaNCC" name="MaNCC" style="width:100px; height:40px">
+            @foreach (var ncc in dsncc)
+            {
+                <option value="@ncc.MaNCC">@ncc.TenNCC</option>
+            }
+        </select>
+    </div>
+    <br />
+    <h3 class="h3 text-black">Danh Sách Sản Phẩm</h3>
+    <div class="site-blocks-table" style="width: 100%; height: 700px; overflow: auto; border: 1px solid gray;">
+        <table class="table table-bordered">
+            <thead class="fixed-header" >
+                <tr>
+                    <th class="product-name" width="150">Mã sản phẩm</th>
+                    <th class="product-name" width="250">Tên sản phẩm</th>
+                    <th class="product-name" width="250">Loại</th>
+                    <th class="product-price">Giá bán</th>
+                    <th class="product-quantity">Số lượng tồn</th>
+                    <th></th>
+                </tr>
+            </thead>
+            @foreach (var item in dssp)
+            {
+                <tbody data-item-id="@item.MaSP">
+                    <tr class="product">
+                        <td class="u-align-left u-border-1 u-border-grey-30 u-table-cell u-table-cell-12">
+                            @item.MaSP
+                        </td>
+                        <td class="u-align-left u-border-1 u-border-grey-30 u-table-cell u-table-cell-12">
+                            @item.TenSP
+                        </td>
+                        <td class="u-align-left u-border-1 u-border-grey-30 u-table-cell u-table-cell-12">
+                            @item.DanhMucSP.TenDM
+                        </td>
+                        <td>@item.GiaBan.ToString("#,##", nfi) VND</td>
+                        <td>
+                            @item.SoLuong
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addProductModal-@item.MaSP.Replace(" ", "-").Replace("#", "")" data-masp="@item.MaSP">
+                                <i class="icon icon-add"></i>
+                            </button>
+                            <!-- Modal cho sản phẩm cụ thể -->
+                            <form method="post" action="/QuanLy/AddProduct" enctype="multipart/form-data">
+                                <div class="modal fade" id="addProductModal-@item.MaSP.Replace(" ", "-").Replace("#", "")" tabindex="-1" role="dialog" aria-labelledby="addProductModalLabel" aria-hidden="true" data-masp="@item.MaSP">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title text-black font-weight-bold" id="addProductModalLabel">Thêm Chi Tiết Phiếu Nhập</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body text-xl-left font-weight-bold" style="color:gray;">
+                                                <!-- Hiển thị thông tin sản phẩm -->
+                                                <p>Mã Sản Phẩm: <span style="color:black;"> @item.MaSP </span></p>
+                                                <p>Tên Sản Phẩm: <span style="color:black;"> @item.TenSP </span></p>
+                                                <p>Loại: <span style="color:black;"> @item.DanhMucSP.TenDM </span></p>
+                                                <input type="hidden" name="MaSP" value="@item.MaSP">
+                                                <div class="editor-label">
+                                                    Số Lượng
+                                                </div>
+                                                <div class="editor-field">
+                                                    <input type="number" name="SoLuongNhap" oninput="validateNumber(this); checkMinValue(this);" required="" />
+                                                    @Html.ValidationMessageFor(model => model.SoLuongNhap)
+                                                    <span id="error-sln" style="color: red; display: none;">Số lượng nhập phải lớn hơn 0</span>
+                                                </div>
+                                                <div class="editor-label" style="margin-top:10px;">
+                                                    Giá Nhập
+                                                </div>
+                                                <div class="editor-field">
+                                                    <input type="number" name="GiaNhap" oninput="validateNumber(this); checkGia(this);" required="" />
+                                                    @Html.ValidationMessageFor(model => model.GiaNhap)
+                                                    <span id="error-gia" style="color: red; display: none;">Giá nhập phải lớn hơn 0</span>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                                                <button type="submit" class="btn btn-danger">Lưu</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </td>
+                    </tr>
+                </tbody>
+            }
+        </table>
+    </div>
+
+    <hr style="background-color:darkgrey;">
+    <br />
+    
+    <h3 class="h3 text-black">Chi Tiết Phiếu Nhập</h3>
+    <div class="site-blocks-table" style="width: 100%; height: 500px; overflow: auto; ">
+        <table class="table table-bordered">
+            <thead class="fixed-header">
+                <tr>
+                    <th class="product-name" width="150">Mã sản phẩm</th>
+                    <th class="product-name" width="250">Tên sản phẩm</th>
+                    <th class="product-name" width="180">Loại</th>
+                    <th class="product-price">Giá nhập</th>
+                    <th class="product-quantity">Số lượng nhập</th>
+                    <th class="product-price">Thành Tiền</th>
+                    <th width="80"></th>
+                </tr>
+            </thead>
+            @foreach (var item in (List<CTPN>)Session["SelectedProducts"])
+            {
+                <tbody data-item-id="@item.masp">
+                    <tr class="product">
+                        <td class="u-align-left u-border-1 u-border-grey-30 u-table-cell u-table-cell-12">
+                            @item.masp
+                        </td>
+                        <td class="u-align-left u-border-1 u-border-grey-30 u-table-cell u-table-cell-12">
+                            @item.tenSP
+                        </td>
+                        <td class="u-align-left u-border-1 u-border-grey-30 u-table-cell u-table-cell-12">
+                            @item.tenLoai
+                        </td>
+                        <td>@item.giaNhap.ToString("#,##", nfi) VND</td>
+                        <td>
+                            @item.soluong
+                        </td>
+                        <td>@item.thanhTien.ToString("#,##", nfi) VND</td>
+                        <td>
+                            <div class="row">
+                                <a href="#" class="btn btn-primary height-auto btn-sm" data-toggle="modal"
+                                   data-target="#updateProductModal-@item.masp.Replace(" ", "-").Replace("#", "")" data-masp="@item.masp">
+                                    <i class="icon icon-pencil"></i>
+                                </a>
+                                &nbsp;
+                                <!-- Modal cho sản phẩm cụ thể -->
+                                <form method="post" action="/QuanLy/UpdateProduct" enctype="multipart/form-data">
+                                    <div class="modal fade" id="updateProductModal-@item.masp.Replace(" ", "-").Replace("#", "")" tabindex="-1" role="dialog" aria-labelledby="addProductModalLabel" aria-hidden="true" data-masp="@item.masp">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title text-black font-weight-bold" id="addProductModalLabel">Chỉnh Sửa Chi Tiết Phiếu Nhập</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body text-xl-left font-weight-bold" style="color:gray;">
+                                                    <!-- Hiển thị thông tin sản phẩm -->
+                                                    <p>Mã Sản Phẩm: <span style="color:black;"> @item.masp </span></p>
+                                                    <p>Tên Sản Phẩm: <span style="color:black;"> @item.tenSP </span></p>
+                                                    <p>Loại: <span style="color:black;"> @item.tenLoai </span></p>
+                                                    <input type="hidden" name="MaSP" value="@item.masp">
+                                                    <div class="editor-label">
+                                                        Số Lượng
+                                                    </div>
+                                                    <div class="editor-field">
+                                                        <input type="number" name="SoLuongNhap" value="@item.soluong" oninput="validateNumber(this); checkMinValue(this);" required="" />
+                                                        @Html.ValidationMessageFor(model => model.SoLuongNhap)
+                                                        <span id="error-sln-sua" style="color: red; display: none;">Số lượng nhập phải lớn hơn 0</span>
+                                                    </div>
+                                                    <div class="editor-label" style="margin-top:10px;">
+                                                        Giá Nhập
+                                                    </div>
+                                                    <div class="editor-field">
+                                                        <input type="number" name="GiaNhap" value="@item.giaNhap" oninput="validateNumber(this); checkGia(this);" required="" />
+                                                        @Html.ValidationMessageFor(model => model.GiaNhap)
+                                                        <span id="error-gia-sua" style="color: red; display: none;">Giá nhập phải lớn hơn 0</span>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                                                    <button type="submit" class="btn btn-danger">Lưu</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <a href="/QuanLy/DeleteProduct/@item.masp" class="btn btn-danger height-auto btn-sm">
+                                    <i class="icon icon-delete"></i>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            }
+        </table>
+    </div>
+    @{List<CTPN> pn = Session["SelectedProducts"] as List<CTPN>;}
+    <div class="col-md-12 pl-5">
+        <div class="row justify-content-end">
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="col-md-12 text-left border-bottom mb-5">
+                        <h3 class="text-black h4 text-uppercase">Tổng tiền</h3>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-12 text-right">
+                        <strong class="text-danger h5">
+                            @{
+                                if (pn.Count() == 0)
+                                {
+                                    <span>0 VND</span>
+                                }
+                                else
+                                {
+                                    <span>@pn.Sum(t => t.soluong * t.giaNhap).ToString("#,##", nfi) VND</span>
+                                }
+                            }
+                        </strong>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div>
+                            <a href="javascript:void(0);" onclick="createPhieuNhap()" class="btn btn-primary btn-lg btn-block">TẠO MỚI</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@{
+    if (TempData["LoginMessage"] == "Xoa")
+    {
+        <script>
+            alert("Xóa sản phẩm thất bại.");
+        </script>
+    }
+}
+
+<script>
+    function validateNumber(input) {
+        // Loại bỏ ký tự không phải số (ký tự đặc biệt, chữ cái, v.v.)
+        input.value = input.value.replace(/[^0-9.+\-]/g, "");
+    }
+
+    function createPhieuNhap() {
+        var selectedValue = document.getElementById("MaNCC").value;
+        window.location.href = "/QuanLy/ThemPhieuNhap_CT?mancc=" + selectedValue;
+    }
+
+    function checkMinValue(input) {
+        var sl = parseInt(input.value, 10);
+        var minValue = 0;
+        var error = document.getElementById("error-sln");
+        var error_sua = document.getElementById("error-sln-sua");
+        if (sl <= 0) {
+            error.style.display = "block";
+            error_sua.style.display = "block";
+        } else {
+            error.style.display = "none";
+            error_sua.style.display = "none";
+        }
+    }
+    
+    function checkGia(input) {
+        var sl = parseInt(input.value, 10);
+        var minValue = 0;
+        var error = document.getElementById("error-gia");
+        var error_sua = document.getElementById("error-gia-sua");
+        if (sl <= 0) {
+            error.style.display = "block";
+            error_sua.style.display = "block";
+        } else {
+            error.style.display = "none";
+            error_sua.style.display = "none";
+        }
+    }
+</script>

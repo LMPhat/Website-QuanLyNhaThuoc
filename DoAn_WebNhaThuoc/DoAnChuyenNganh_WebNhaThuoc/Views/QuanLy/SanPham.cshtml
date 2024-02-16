@@ -1,0 +1,307 @@
+﻿
+@{
+    ViewBag.Title = "SanPham";
+    Layout = "~/Views/Shared/_LayoutQuanLy.cshtml";
+
+    var nfi = new System.Globalization.NumberFormatInfo { NumberGroupSeparator = "." };
+
+    List<DanhMucSP> dsl = ViewBag.maloai;
+}
+
+@using DoAnChuyenNganh_WebNhaThuoc.Models;
+@model List<SanPham>
+
+<body>
+    <section style="margin-top:-100px;">
+        @if (ViewBag.ErrorMessage != null)
+        {
+            <div class="alert alert-danger">
+                @ViewBag.ErrorMessage
+            </div>
+        }
+        <div style="margin-bottom:30px;" class="d-flex align-items-center">
+            <h2 class="text-dark font-weight-bold">Danh sách sản phẩm</h2>
+            <a href="#" class="btn btn-primary h-75"
+               data-toggle="modal" data-target="#addProductModal" style="margin-left:60%;">THÊM MỚI</a>
+            <!-- Modal cho sản phẩm cụ thể -->
+            <form method="post" action="/QuanLy/ThemSanPham" enctype="multipart/form-data">
+                <div class="modal fade" style="margin-top:60px;" id="addProductModal" tabindex="-1" role="dialog" aria-labelledby="addProductModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-black font-weight-bold" id="addProductModalLabel">Thêm Sản Phẩm</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body text-xl-left font-weight-bold" style="color:gray;">
+                                <!-- Hiển thị thông tin sản phẩm -->
+                                <div class="editor-label" style="margin-top:-10px; margin-bottom:10px;">
+                                    Loại Sản Phẩm
+                                </div>
+                                <div class="editor-field" style="margin-top:-10px; margin-bottom:10px;">
+                                    <select id="MaDM" name="MaDM" style="height:35px; margin-top:-20px;">
+                                        @foreach (var kt in dsl)
+                                        {
+                                            <option value="@kt.MaDM">@kt.TenDM</option>
+                                        }
+                                    </select>
+                                </div>
+
+                                <div class="editor-label">
+                                    Tên Sản Phẩm
+                                </div>
+                                <div class="editor-field">
+                                    <input type="text" name="TenSP" placeholder="" required="" />
+                                    @Html.ValidationMessage("TenSP", "", new { @class = "text-danger" })
+                                </div>
+
+                                <div class="editor-label">
+                                    Hình Ảnh
+                                </div>
+                                <div class="editor-field">
+                                    <input class="form-control form-control-sm" required="" name="fileUpload" type="file" placeholder="Choose file" style="width:90%;">
+                                </div>
+
+                                <div class="editor-label">
+                                    Giá Bán
+                                </div>
+                                <div class="editor-field">
+                                    <input type="number" name="GiaBan" oninput="validateNumber(this); checkMinValue(this);" placeholder="" required="" />
+                                    @Html.ValidationMessage("GiaBan", "", new { @class = "text-danger" })
+                                    <span id="error-gia" style="color: red; display: none;">Giá bán phải lớn hơn hoặc bằng 1000</span>
+                                </div>
+                                <div class="editor-label">
+                                    Nước Sản Xuất
+                                </div>
+                                <div class="editor-field">
+                                    <input type="text" name="NuocSX" placeholder="" required="" />
+                                    @Html.ValidationMessage("NuocSX", "", new { @class = "text-danger" })
+                                </div>
+                                <div class="editor-label">
+                                    Thành Phần
+                                </div>
+                                <div class="editor-field">
+                                    <textarea name="ThanhPhan" placeholder="" required="" style="width:90%; height: 100px;"></textarea>
+                                    @Html.ValidationMessage("ThanhPhan", "", new { @class = "text-danger" })
+                                </div>
+                                <div class="editor-label">
+                                    Công Dụng
+                                </div>
+                                <div class="editor-field">
+                                    <textarea name="CongDung" placeholder="" required="" style="width:90%; height: 100px;"></textarea>
+                                    @Html.ValidationMessage("CongDung", "", new { @class = "text-danger" })
+                                </div>
+                                <div class="editor-label">
+                                    Lưu Ý
+                                </div>
+                                <div class="editor-field">
+                                    <textarea name="LuuY" placeholder="" required="" style="width:90%; height: 100px;"></textarea>
+                                    @Html.ValidationMessage("LuuY", "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                                <button type="submit" class="btn btn-danger">Lưu</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+        <div class="u-expanded-width u-table u-table-responsive u-table-1">
+            <table class="table table-bordered">
+                <colgroup>
+                    <col width="3.2%">
+                    <col width="12.8%">
+                    <col width="9.5%">
+                    @*<col width="19.3%">*@
+                    @*<col width="5.5%">*@
+                    <col width="8.6%">
+                    <col width="10%">
+                    <col width="6.4%">
+                    <col width="9.4%">
+                    <col width="10.9%">
+                    <col width="8.8%">
+                </colgroup>
+                <thead class="table-primary text-dark" style="text-align:center;">
+                    <tr style="height: 85px;">
+                        <th class="product-name">Mã Sản Phẩm</th>
+                        <th class="product-name">Tên Sản Phẩm</th>
+                        <th class="product-name">Loại</th>
+                        <th class="product-name">Nước sản xuất</th>
+                        <th class="product-price">Giá</th>
+                        <th class="product-quantity">Số Lượng</th>
+                        <th class="product-total">Ảnh</th>
+                        <th class="product-name">Trạng Thái</th>
+                        <th class="product-remove"></th>
+                    </tr>
+                </thead>
+                @foreach (var item in Model)
+                {
+                    <tbody class="text-black">
+                        <tr style="height: 100px;">
+                            <td class="product-name">@item.MaSP</td>
+                            <td class="product-name">
+                                <a href="/QuanLy/ChiTietSP/@item.MaSP" style="color:#12517e">@item.TenSP</a>
+                            </td>
+                            <td class="product-name">@item.DanhMucSP.TenDM</td>
+                            <td class="product-name">@item.NuocSX</td>
+                            <td class="product-price">@item.GiaBan.ToString("#,##", nfi) VND</td>
+                            <td class="product-quantity">
+                                @{
+                                    if (item.SoLuong == null)
+                                    {
+                                        <p>0</p>
+                                    }
+                                    else
+                                    {
+                                        @item.SoLuong
+                                    }
+                                }
+                            </td>
+
+                            <td class="product-thumbnai"><img src="/HinhAnh/@item.HinhAnh" width="100" /></td>
+                            <td>
+                                @{
+                                    if (item.TrangThai)
+                                    {
+                                        <span>Đang kinh doanh</span>
+                                    }
+                                    else
+                                    {
+                                        <span>Ngừng kinh doanh</span>
+                                    }
+                                }
+                            </td>
+                            <td style="text-align:center;">
+                                @*<div><a href="/QuanLy/SuaSP/@item.MaSP" class="btn btn-secondary" style="margin-bottom:10px;">Cập Nhật</a></div>*@
+                                <a href="#" class="btn btn-secondary" style="margin-bottom:10px;"
+                                   data-toggle="modal" data-target="#updateModal-@item.MaSP.Replace(" ", "-").Replace("#", "")" data-maloai="@item.MaSP">
+                                    <i class="icon icon-pencil"></i>
+                                </a>
+                                    <!-- Modal cho sản phẩm cụ thể -->
+                                    <form method="post" action="/QuanLy/SuaSP" enctype="multipart/form-data">
+                                        <div class="modal fade" style="margin-top:60px;" id="updateModal-@item.MaSP.Replace(" ", "-").Replace("#", "")" data-maloai="@item.MaSP" tabindex="-1" role="dialog" aria-labelledby="addProductModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title text-black font-weight-bold" id="addProductModalLabel">Cập Nhật Sản Phẩm</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body text-xl-left font-weight-bold" style="color:gray;">
+                                                        <!-- Hiển thị thông tin sản phẩm -->
+                                                        <p>Mã Sản Phẩm: <span style="color:black;"> @item.MaSP </span></p>
+                                                        <input type="hidden" name="MaSP" value="@item.MaSP">
+                                                        <div class="editor-label" style="margin-top:-10px; margin-bottom:10px;">
+                                                            Loại Sản Phẩm
+                                                        </div>
+                                                        <div class="editor-field" style="margin-top:-10px; margin-bottom:10px;">
+                                                            <select id="MaDM" name="MaDM" style="height:35px; margin-top:-20px;">
+                                                                @foreach (var kt in dsl)
+                                                                {
+                                                                    <option value="@kt.MaDM">@kt.TenDM</option>
+                                                                }
+                                                            </select>
+                                                        </div>
+                                                        <div class="editor-label">
+                                                            Tên Sản Phẩm
+                                                        </div>
+                                                        <div class="editor-field" style="margin-bottom:10px;">
+                                                            <input type="text" name="TenSP" style="width:60%; height:35px;" placeholder="" value="@item.TenSP" required="" />
+                                                            @Html.ValidationMessage("TenSP", "", new { @class = "text-danger" })
+                                                        </div>
+
+                                                        <div class="editor-label">
+                                                            Nước Sản Xuất
+                                                        </div>
+                                                        <div class="editor-field" style="margin-bottom:10px;">
+                                                            <input type="text" name="NuocSX" style="width:60%; height:35px;" value="@item.NuocSX" placeholder="" required="" />
+                                                            @Html.ValidationMessage("NuocSX", "", new { @class = "text-danger" })
+                                                        </div>
+
+                                                        <input type="hidden" name="ThanhPhan" value="@item.ChiTietSanPham.ThanhPhan" placeholder="" required="" />
+                                                        <input type="hidden" name="CongDung" value="@item.ChiTietSanPham.CongDung" placeholder="" required="" />
+                                                        <input type="hidden" name="LuuY" value="@item.ChiTietSanPham.LuuY" placeholder="" required="" />
+
+                                                        <p>Trạng Thái</p>
+                                                        <div style="margin-top:-20px;">
+                                                            <input type="radio" id="true" name="TrangThai" value="true" @(item.TrangThai == true ? "checked" : "") />
+                                                            <label for="true"> <span style="color:black;">Đang kinh doanh</span></label>
+                                                            <input type="radio" id="false" name="TrangThai" value="false" @(item.TrangThai == false ? "checked" : "") />
+                                                            <label for="fale"><span style="color:black;">Ngừng kinh doanh</span></label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                                                        <button type="submit" class="btn btn-danger">Lưu</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                @*<div><a href="/QuanLy/XoaSP/@item.MaSP" class="btn btn-danger">DELETE</a></div>*@
+                                <a href="#" class="btn btn-danger" style="margin-bottom:10px;"
+                                   data-toggle="modal" data-target="#deleteModal-@item.MaSP.Replace(" ", "-").Replace("#", "")" data-maloai="@item.MaSP">
+                                    <i class="icon icon-delete_sweep"></i>
+                                </a>
+                                <!-- Modal cho sản phẩm cụ thể -->
+                                <form method="post" action="/QuanLy/XoaSP" enctype="multipart/form-data">
+                                    <div class="modal fade" style="margin-top:60px;" id="deleteModal-@item.MaSP.Replace(" ", "-").Replace("#", "")" data-maloai="@item.MaSP" tabindex="-1" role="dialog" aria-labelledby="addProductModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title text-black font-weight-bold" id="addProductModalLabel">Xóa Sản Phẩm</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body text-xl-left" style="color:gray;">
+                                                    <!-- Hiển thị thông tin sản phẩm -->
+                                                    <p>Bạn có đồng ý xóa sản phẩm<span style="color:black;"> @item.TenSP </span> không?</p>
+                                                    <input type="hidden" name="MaSP" value="@item.MaSP">
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                                                    <button type="submit" class="btn btn-danger">Xóa</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </td>
+                        </tr>
+                    </tbody>
+                }
+            </table>
+
+        </div>
+    </section>
+</body>
+
+@if (TempData["LoginMessage"] == "1")
+{
+    <script>
+        alert("Xóa sản phẩm thành công.");
+    </script>
+}
+<script>
+    function validateNumber(input) {
+        // Loại bỏ ký tự không phải số (ký tự đặc biệt, chữ cái, v.v.)
+        input.value = input.value.replace(/\D/g, "");
+    }
+
+    function checkMinValue(input) {
+        var giaBan = parseInt(input.value, 10);
+        var minValue = 1000;
+        var error = document.getElementById("error-gia");
+        if (giaBan < minValue) {
+            error.style.display = "block";
+        } else {
+            error.style.display = "none";
+        }
+    }
+</script>

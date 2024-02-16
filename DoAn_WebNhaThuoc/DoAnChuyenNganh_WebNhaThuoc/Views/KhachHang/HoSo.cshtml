@@ -1,0 +1,91 @@
+﻿@{
+    ViewBag.Title = "Thông tin Khách Hàng";
+    Layout = "~/Views/Shared/_LayoutKhachHang.cshtml";
+    KhachHang kh = new KhachHang();
+    kh = ViewBag.kh;
+}
+
+@using DoAnChuyenNganh_WebNhaThuoc.Models;
+
+<html lang="en">
+<head>
+    <title>Thông tin Khách Hàng</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,700|Crimson+Text:400,400i" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    @if (ViewBag.ErrorMessage != null)
+    {
+        <div class="alert alert-danger">
+            @ViewBag.ErrorMessage
+        </div>
+    }
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row text-black " style="margin-top: -100px; margin-left:30%; border: 1px solid #ccc; border-radius: 10px; width:50%;">
+                <div class="col-md-12" style="margin-top:2%; ">
+                    <form action="/KhachHang/SuaKH" method="post" class="">
+                        <h3 class="mb-4 billing-heading text-center text-uppercase" style="margin-top: 20px;">Thay đổi thông tin</h3>
+                        <div class="row align-items-end">
+                            <div class="u-form-group u-form-name" style=" margin-top: 10px;width: 480px; ">
+                                <input type="hidden" value="@kh.MaKH" placeholder="" id="name-bb74" name="id" class="form-control" required="">
+                            </div>
+                            <div class="u-form-group u-form-name" style="margin-left: 5%; margin-top: 10px;width: 480px; ">
+                                <label for="name-bb74" class="u-label">Họ Tên (*)</label>
+                                <input type="text" value="@kh.TenKH" placeholder="Nhập họ tên của bạn" id="name-bb74" name="name" class="form-control" required="">
+                            </div>
+                            <div class="u-form-group u-form-name" style="margin-left: 5%; margin-top: 10px;width: 480px; ">
+                                <label for="phone-bb74" class="u-label">Số Điện Thoại (*)</label>
+                                <input type="text" value="@kh.SDT.TrimEnd()" oninput="validateNumber(this)" pattern="[0-9]*" maxlength="10" placeholder="Nhập Số Điện Thoại" id="phone-bb74" name="phone" class="form-control " required="">
+                                <span id="error-phone" style="color: red; display: none;">Số điện thoại phải có 10 ký tự số</span>
+                            </div>
+                            <div class="u-form-group u-form-name" style="margin-left: 5%; margin-top: 10px;width: 480px; ">
+                                <label for="email-bb74" class="u-label">Email (*)</label>
+                                <input type="email" value="@kh.Email" placeholder="Nhập Email" id="email-bb74" name="email" class="form-control " required="">
+                                <span id="error-email" style="color: red; display: none;">Email không hợp lệ</span>
+                            </div>
+                            <div class="u-form-group u-form-name" style="margin-left: 5%; margin-top: 10px;width: 480px; ">
+                                <label for="address-bb74" class="u-label">Địa Chỉ (*)</label>
+                                <input type="text" value="@kh.DiaChi" placeholder="Nhập Địa chỉ của bạn" id="address-bb74" name="address" class="form-control" required="">
+                            </div>
+                        </div>
+                        <br />
+                        <div class="u-align-center u-form-group u-form-submit" style="margin-left: 37%;">
+                            <input type="submit" value="Xác nhận" class="u-form-control-hidden btn btn-primary py-3 px-4">
+                        </div>
+
+                    </form>
+                    <p class="u-text u-text-black u-text-2 text-sm-right">
+                        <a class="text-info" href="/KhachHang/KiemTraPass">Thay đổi mật khẩu?</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+@if (TempData["LoginMessage"] != null)
+{
+    if (TempData["LoginMessage"] == "Đổi mật khẩu thành công")
+    {
+        <script>
+            alert("Đổi mật khẩu thành công");
+        </script>
+    }
+    else
+    {
+        <script>
+            alert("Mật khẩu đã tồn tại!");
+        </script>
+    }
+}

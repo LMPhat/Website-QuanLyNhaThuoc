@@ -1,0 +1,309 @@
+﻿
+@{
+    ViewBag.Title = "Nhân viên";
+    Layout = "~/Views/Shared/_LayoutQuanLy.cshtml";
+}
+@using DoAnChuyenNganh_WebNhaThuoc.Models;
+@model List<NhanVien>
+
+<body>
+    <section style="margin-top:-100px;">
+        @if (ViewBag.ErrorMessage != null)
+        {
+            <div class="alert alert-danger">
+                @ViewBag.ErrorMessage
+            </div>
+        }
+        <div style="margin-bottom:30px;" class="d-flex align-items-center">
+            <h2 class="text-dark font-weight-bold">Danh sách nhân viên</h2>
+            <a href="#" class="btn btn-primary h-75"
+               data-toggle="modal" data-target="#addProductModal" style="margin-left:60%;">THÊM MỚI</a>
+            <!-- Modal cho sản phẩm cụ thể -->
+            <form method="post" action="/QuanLy/ThemNV" enctype="multipart/form-data">
+                <div class="modal fade" style="margin-top:100px;" id="addProductModal" tabindex="-1" role="dialog" aria-labelledby="addProductModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-black font-weight-bold" id="addProductModalLabel">Thêm Nhân Viên</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body text-xl-left font-weight-bold" style="color:gray;">
+                                <!-- Hiển thị thông tin sản phẩm -->
+                                <div class="editor-label">
+                                    Tên Nhân Viên
+                                </div>
+                                <div class="editor-field" style="margin-bottom:15px;">
+                                    <input type="text" name="tenNV" placeholder="" required="" />
+                                    @Html.ValidationMessage("tenNV", "", new { @class = "text-danger" })
+                                </div>
+
+                                <div class="editor-label">
+                                    Số Điện Thoại
+                                </div>
+                                <div class="editor-field" style="margin-bottom:15px;">
+                                    <input type="text" oninput="validateNumber(this)" pattern="[0-9]*" maxlength="10" id="phone" name="sdt" placeholder="" required="">
+                                    <span id="error-phone" style="color: red; display: none;">Số điện thoại phải đủ 10 số</span>
+                                    @Html.ValidationMessage("sdt", "", new { @class = "text-danger" })
+                                </div>
+
+                                <div class="editor-label">
+                                    Email
+                                </div>
+                                <div class="editor-field" style="margin-bottom:15px;">
+                                    <input type="email" name="email" placeholder="" required="" />
+                                    @Html.ValidationMessage("email", "", new { @class = "text-danger" })
+                                </div>
+
+                                <div class="editor-label">
+                                    Tên Đăng Nhập
+                                </div>
+                                <div class="editor-field" style="margin-bottom:15px;">
+                                    <input type="text" name="tenDN" placeholder="" required="" />
+                                    @Html.ValidationMessage("tenDN", "", new { @class = "text-danger" })
+                                </div>
+
+                                <div class="editor-label">
+                                    Mật Khẩu
+                                </div>
+                                <div class="editor-field" style="margin-bottom:15px;">
+                                    <input type="password" name="password" placeholder="" required="" />
+                                    @Html.ValidationMessage("password", "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                                <button type="submit" class="btn btn-danger">Lưu</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="u-expanded-width u-table u-table-responsive u-table-1">
+            <table class="table table-bordered">
+                <colgroup>
+                    <col width="4.1%">
+                    <col width="17.6%">
+                    <col width="9.6%">
+                    <col width="17.8%">
+                    <col width="14.3%">
+                    @*<col width="12.1%">*@
+                    <col width="9.6%">
+                    <col width="12.9%">
+                </colgroup>
+                <thead class="table-primary text-dark" style="text-align:center;">
+                    <tr style="height: 85px;">
+                        <th class="u-align-center u-border-1 u-border-grey-30 u-custom-font u-font-oswald u-table-cell">Mã Nhân Viên</th>
+                        <th class="u-border-1 u-border-grey-30 u-custom-font u-font-oswald u-table-cell u-table-cell-2">Tên Nhân Viên</th>
+                        <th class="u-border-1 u-border-grey-30 u-custom-font u-font-oswald u-table-cell u-table-cell-4">Số Điện Thoại</th>
+                        <th class="u-border-1 u-border-grey-30 u-custom-font u-font-oswald u-table-cell u-table-cell-5">Email</th>
+                        <th class="u-border-1 u-border-grey-30 u-custom-font u-font-oswald u-table-cell u-table-cell-6">Username</th>
+                        @*<th class="u-border-1 u-border-grey-30 u-custom-font u-font-oswald u-table-cell u-table-cell-7">PASSWORD</th>*@
+                        <th class="u-border-1 u-border-grey-30 u-custom-font u-font-oswald u-table-cell u-table-cell-5">Trạng thái</th>
+                        <th class="u-border-1 u-border-grey-30 u-custom-font u-font-oswald u-table-cell u-table-cell-8"></th>
+                    </tr>
+                </thead>
+                @foreach (var item in Model)
+                {
+                    <tbody class="u-align-center u-custom-font u-font-oswald u-table-body text-black">
+                        <tr style="height: 100px;">
+                            <td class="u-align-left u-border-1 u-border-grey-30 u-first-column u-table-cell u-table-cell-9">@item.MaNV</td>
+                            <td class="u-align-left u-border-1 u-border-grey-30 u-table-cell u-table-cell-10">@item.TenNV</td>
+                            <td class="u-align-center u-border-1 u-border-grey-30 u-table-cell u-table-cell-12">@item.SDT</td>
+                            <td class="u-align-left u-border-1 u-border-grey-30 u-table-cell u-table-cell-13">@item.Email</td>
+                            <td class="u-align-left u-border-1 u-border-grey-30 u-table-cell u-table-cell-14">@item.UserName</td>
+                            @*<td class="u-border-1 u-border-grey-30 u-table-cell u-table-cell-15">@item.TaiKhoan.Password</td>*@
+                            <td class="u-align-left u-border-1 u-border-grey-30 u-table-cell u-table-cell-13">
+                                @{
+                                    if (item.TrangThai)
+                                    {
+                                        <span>Hoạt động</span>
+                                    }
+                                    else
+                                    {
+                                        <span>Đã khóa</span>
+                                    }
+                                }
+                            </td>
+                            <td style="text-align:center;">
+                                <a href="#" class="btn btn-secondary" style="margin-bottom:10px;"
+                                   data-toggle="modal" data-target="#updateModal-@item.MaNV.Replace(" ", "-").Replace("#", "")" data-maloai="@item.MaNV">
+                                    <i class="icon icon-pencil"></i>
+                                </a>
+                                <!-- Modal cho sản phẩm cụ thể -->
+                                <form method="post" action="/QuanLy/SuaNV" enctype="multipart/form-data">
+                                    <div class="modal fade" style="margin-top:60px;" id="updateModal-@item.MaNV.Replace(" ", "-").Replace("#", "")" data-maloai="@item.MaNV" tabindex="-1" role="dialog" aria-labelledby="addProductModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title text-black font-weight-bold" id="addProductModalLabel">Chỉnh Sửa Nhân Viên</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body text-xl-left font-weight-bold" style="color:gray;">
+                                                    <!-- Hiển thị thông tin sản phẩm -->
+                                                    <p>Mã Nhân Viên: <span style="color:black;"> @item.MaNV </span></p>
+                                                    <input type="hidden" name="MaNV" value="@item.MaNV">
+
+                                                    <p>UserName: <span style="color:black;"> @item.UserName </span></p>
+                                                    <input type="hidden" name="UserName" value="@item.UserName">
+
+                                                    <div class="editor-label">
+                                                        Tên Nhân Viên
+                                                    </div>
+                                                    <div class="editor-field">
+                                                        <input type="text" name="TenNV" placeholder="" value="@item.TenNV" required="" />
+                                                        @Html.ValidationMessage("TenNV", "", new { @class = "text-danger" })
+                                                    </div>
+
+                                                    <div class="editor-label">
+                                                        Số Điện Thoại
+                                                    </div>
+                                                    <div class="editor-field" style="margin-bottom:15px;">
+                                                        <input type="text" oninput="validateNumber(this)" value="@item.SDT" pattern="[0-9]*" maxlength="10" id="phone" name="SDT" placeholder="" required="">
+                                                        <span id="error-phone" style="color: red; display: none;">Số điện thoại phải đủ 10 số</span>
+                                                        @Html.ValidationMessage("SDT", "", new { @class = "text-danger" })
+                                                    </div>
+
+                                                    <div class="editor-label">
+                                                        Email
+                                                    </div>
+                                                    <div class="editor-field" style="margin-bottom:15px;">
+                                                        <input type="email" name="Email" value="@item.Email" placeholder="" required="" />
+                                                        @Html.ValidationMessage("Email", "", new { @class = "text-danger" })
+                                                    </div>
+
+                                                    <p>Trạng Thái:</p>
+                                                    <div>
+                                                        <input type="radio" id="true" name="TrangThai" value="true" @(item.TrangThai == true ? "checked" : "") />
+                                                        <label for="true"><span style="color:black;">Hoạt động</span></label>
+                                                        <input type="radio" id="false" name="TrangThai" value="false" @(item.TrangThai == false ? "checked" : "") />
+                                                        <label for="fale"><span style="color:black;">Đã khóa</span></label>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                                                    <button type="submit" class="btn btn-danger">Lưu</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <a href="#" class="btn btn-danger" style="margin-bottom:10px;"
+                                   data-toggle="modal" data-target="#deleteModal-@item.MaNV.Replace(" ", "-").Replace("#", "")" data-maloai="@item.MaNV">
+                                    <i class="icon icon-delete_sweep"></i>
+                                </a>
+                                <!-- Modal cho sản phẩm cụ thể -->
+                                <form method="post" action="/QuanLy/XoaNV" enctype="multipart/form-data">
+                                    <div class="modal fade" style="margin-top:60px;" id="deleteModal-@item.MaNV.Replace(" ", "-").Replace("#", "")" data-maloai="@item.MaNV" tabindex="-1" role="dialog" aria-labelledby="addProductModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title text-black font-weight-bold" id="addProductModalLabel">Xóa Nhân Viên</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body text-xl-left" style="color:gray;">
+                                                    <!-- Hiển thị thông tin sản phẩm -->
+                                                    <p>Bạn có đồng ý xóa nhân viên<span style="color:black;"> @item.MaNV </span> không?</p>
+                                                    <input type="hidden" name="MaNV" value="@item.MaNV">
+                                                    <input type="hidden" name="UserName" value="@item.UserName">
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                                                    <button type="submit" class="btn btn-danger">Xóa</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </td>
+                        </tr>
+                    </tbody>
+                }
+            </table>
+        </div>
+    </section>
+</body>
+
+@{
+    if (TempData["LoginMessage"] == "Loi_1")
+    {
+        <script>
+            alert("Tên tài khoản đã tồn tại!");
+        </script>
+    }
+    else
+    {
+        if (TempData["LoginMessage"] == "Them_TC")
+        {
+            <script>
+                alert("Thêm nhân viên thành công.");
+            </script>
+        }
+        else
+        {
+            if (TempData["LoginMessage"] == "Them_Rong")
+            {
+                <script>
+                    alert("Dữ liệu rỗng.");
+                </script>
+            }
+            else
+            {
+                if (TempData["LoginMessage"] == "Sua_TC")
+                {
+                    <script>
+                        alert("Sửa nhân viên thành công.");
+                    </script>
+                }
+                else
+                {
+                    if (TempData["SuaLoi_SDT"] != null && TempData["SuaLoi_Email"] != null)
+                    {
+                        <script>
+                            alert("Số điện thoại và địa chỉ Email đã tồn tại!");
+                        </script>
+                    }
+                    else
+                    {
+                        if (TempData["SuaLoi_SDT"] != null)
+                        {
+                            <script>
+                                alert("Số điện thoại đã tồn tại!");
+                            </script>
+                        }
+                        else
+                        {
+                            if (TempData["SuaLoi_Email"] != null)
+                            {
+                                <script>
+                                    alert("Email đã tồn tại!");
+                                </script>
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+<script>
+    function validateNumber(input) {
+        input.value = input.value.replace(/\D/g, "");
+        var error = document.getElementById("error-phone");
+        if (input.value.length !== 10) {
+            error.style.display = "block";
+        } else {
+            error.style.display = "none";
+        }
+    }
+
+    
+</script>

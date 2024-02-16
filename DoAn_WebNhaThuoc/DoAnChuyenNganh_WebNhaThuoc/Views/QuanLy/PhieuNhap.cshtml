@@ -1,0 +1,93 @@
+﻿
+@{
+    ViewBag.Title = "PhieuNhap";
+    Layout = "~/Views/Shared/_LayoutQuanLy.cshtml";
+    
+    var nfi = new System.Globalization.NumberFormatInfo { NumberGroupSeparator = "." };
+}
+
+@using DoAnChuyenNganh_WebNhaThuoc.Models;
+@model List<PhieuNhap>
+
+<body>
+    <section style="margin-top:-100px;">
+        <div style="margin-bottom:30px;" class="d-flex align-items-center">
+            <h2 class="text-dark font-weight-bold">Danh sách phiếu nhập</h2>
+            <a href="/QuanLy/ThemPN" class="btn btn-primary h-75" style="margin-left:60%;">THÊM MỚI</a>
+        </div>
+        <div class="u-expanded-width u-table u-table-responsive u-table-1">
+            <table class="table table-bordered">
+                <colgroup>
+                    <col width="3.2%">
+                    <col width="12.8%">
+                    <col width="9.5%">
+                    @*<col width="19.3%">*@
+                    @*<col width="5.5%">*@
+                    <col width="8.6%">
+                    <col width="8.4%">
+                    <col width="8.8%">
+                </colgroup>
+                <thead class="table-primary text-dark" style="text-align:center;">
+                    <tr style="height: 85px;">
+                        <th class="u-align-center u-border-1 u-border-grey-30 u-custom-font u-font-oswald u-table-cell">Mã Phiếu Nhập</th>
+                        <th class="u-border-1 u-border-grey-30 u-custom-font u-font-oswald u-table-cell u-table-cell-2">Tên Nhân Viên</th>
+                        <th class="u-border-1 u-border-grey-30 u-custom-font u-font-oswald u-table-cell u-table-cell-3">Tên Nhà Cung Cấp</th>
+                        <th class="u-border-1 u-border-grey-30 u-custom-font u-font-oswald u-table-cell u-table-cell-5">Ngày Lập</th>
+                        <th class="u-border-1 u-border-grey-30 u-custom-font u-font-oswald u-table-cell u-table-cell-6">Tổng Tiền</th>
+                        <th class="u-border-1 u-border-grey-30 u-custom-font u-font-oswald u-table-cell u-table-cell-10"></th>
+                    </tr>
+                </thead>
+                @foreach (var item in Model)
+                {
+                    <tbody class="u-align-center u-custom-font u-font-oswald u-table-body text-black">
+                        <tr style="height: 100px;">
+                            <td class="u-align-left u-border-1 u-border-grey-30 u-first-column u-table-cell u-table-cell-9">@item.MaPN</td>
+                            <td class="u-align-left u-border-1 u-border-grey-30 u-table-cell u-table-cell-12">
+                                @{
+                                    if (item.MaNV == null)
+                                    {
+                                            <p>Admin</p>
+                                    }
+                                    else
+                                    {
+                                            @item.NhanVien.TenNV
+                                    }
+                                }
+                            </td>
+                            <td class="u-align-left u-border-1 u-border-grey-30 u-table-cell u-table-cell-14">
+                                @item.NhaCungCap.TenNCC
+                            </td>
+                            <td class="u-border-1 u-border-grey-30 u-table-cell u-table-cell-15">@item.NgayLap</td>
+                            <td class="u-align-right u-border-1 u-border-grey-30 u-table-cell u-table-cell-16 ">@item.TongTien.Value.ToString("#,##", nfi) VND</td>
+
+                            <td class="text-center">
+                                <div><a href="/QuanLy/ChiTietPN/@item.MaPN" class="btn btn-secondary" style="margin-bottom:10px;">
+                                         <i class="icon icon-eye"></i>
+                                    </a></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                }
+            </table>
+
+        </div>
+    </section>
+</body>
+
+@{
+    if (TempData["LoginMessage"] == "ThemPN_D")
+    {
+        <script>
+            alert("Lập phiếu nhập thành công.");
+        </script>
+    }
+    else
+    {
+        if (TempData["LoginMessage"] == "ThemPN_S")
+        {
+            <script>
+                alert("Lập phiếu nhập thất bại.");
+            </script>
+        }
+    }
+}

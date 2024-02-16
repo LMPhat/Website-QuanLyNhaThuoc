@@ -1,0 +1,239 @@
+﻿@{
+    ViewBag.Title = "Cart";
+    Layout = "~/Views/Shared/_LayoutKhachHang.cshtml";
+    float sum = 0;
+    float thanhtien = 0;
+    KhachHang kh = ViewBag.kh;
+    var nfi = new System.Globalization.NumberFormatInfo { NumberGroupSeparator = "." };
+
+
+}
+
+@using DoAnChuyenNganh_WebNhaThuoc.Models;
+@model List<GioHang>
+
+<html lang="en">
+<head>
+    <title>Cart</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,700|Crimson+Text:400,400i" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="site-section" style="margin-top:-150px;">
+        <div class="container">
+            <div class="row mb-5">
+                <form class="col-md-12" method="post">
+                    <div class="site-blocks-table">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th class="product-thumbnail">Hình ảnh</th>
+                                    <th class="product-name" width="250">Tên sản phẩm</th>
+                                    <th class="product-price">Giá</th>
+                                    <th class="product-quantity">Số lượng</th>
+                                    <th class="product-total">Tổng tiền</th>
+                                    <th class="product-remove"></th>
+                                </tr>
+                            </thead>
+                            @foreach (var item in Model)
+                            {
+                                <tbody data-item-id="@item.MaSP">
+                                    <tr class="product">
+                                        <td class="product-thumbnail">
+                                            <img src="/HinhAnh/@item.SanPham.HinhAnh" alt="Image" class="img-fluid">
+                                        </td>
+                                        <td class="u-align-left u-border-1 u-border-grey-30 u-table-cell u-table-cell-12">
+                                            <a href="/KhachHang/ChiTietSP/@item.MaSP" style="color:#12517e">@item.SanPham.TenSP</a>
+                                        </td>
+                                        <td>@item.SanPham.GiaBan.ToString("#,##", nfi) VND</td>
+                                        <td>
+                                            <div class="input-group mb-3" style="max-width: 150px;">
+                                                <div class="input-group-prepend">
+                                                    <button class="btn btn-outline-primary js-btn-minus" type="button" data-item-id="@item.MaSP">&minus;</button>
+                                                </div>
+                                                <input type="text" class="form-control text-center  js-quantity-input" value="@item.SoLuong" placeholder="" min="1" max="@item.SanPham.SoLuong" readonly
+                                                       aria-label="Example text with button addon" aria-describedby="button-addon1">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-outline-primary js-btn-plus" type="button" data-item-id="@item.MaSP">&plus;</button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        @{
+                                thanhtien = item.SanPham.GiaBan * item.SoLuong;
+                                sum += thanhtien;
+                                        }
+                                        <td class="product-total">@thanhtien.ToString("#,##", nfi) VND</td>
+                                        <td><a href="/KhachHang/Xoa_Cart/@item.MaSP" class="btn btn-primary height-auto btn-sm">X</a></td>
+                                    </tr>
+                                </tbody>
+                            }
+                        </table>
+                    </div>
+                </form>
+            </div>
+
+            <div class="row ">
+                <div class="col-md-6">
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-12 text-center d-flex border-bottom mb-5">
+                                <h3 class="text-black h4 text-uppercase">Thông tin giao hàng</h3>
+                                <a href="/KhachHang/HoSo" class="btn btn-warning btn-outline-primary" style="margin-left:20px;margin-bottom:10px;"><i class="icon icon-pencil"></i></a>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-12" style="padding-bottom:15px;">
+                                <span class="text-black h5 icon icon-person">&nbsp;&nbsp;@kh.TenKH</span>
+                            </div>
+                            <div class="col-md-12" style="padding-bottom:15px;">
+                                <span class="text-black icon icon-phone h5">&nbsp;&nbsp;@kh.SDT</span>
+                            </div>
+                            <div class="col-md-12">
+                                <span class="text-black h5 icon icon-map-marker">&nbsp;&nbsp;@kh.DiaChi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 pl-5">
+                    <div class="row justify-content-end">
+                        <div class="col-md-8">
+                            <div class="row">
+                                <div class="col-md-12 text-left border-bottom mb-5">
+                                    <h3 class="text-black h4 text-uppercase">Thông tin thanh toán</h3>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <span class="text-black h5">Tổng tiền</span>
+                                </div>
+                                <div class="col-md-6 text-right">
+                                    @if (sum != 0)
+                                    {
+                                        <strong class="text-danger h5">@sum.ToString("#,##", nfi) VND</strong>
+                                    }
+                                    @if (sum == 0)
+                                    {
+                                        <strong class="text-danger h5">0 VND</strong>
+                                    }
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-12 text-left mb-5">
+                                    <h3 class="text-black h5">Phương thức thanh toán</h3>
+                                    <div class="radio  border-bottom" style="color: black">
+                                        <label>
+                                            <input type="radio" id="TTTM" name="ThanhToan" value="0" class="mr-2" checked> Thanh toán Tiền mặt
+                                        </label>
+                                        <br />
+                                        <label>
+                                            <input type="radio" id="TTB" name="ThanhToan" value="1" class="mr-2"> Thanh toán Online
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <button class="btn btn-primary btn-lg btn-block" id="btnDatHang">
+                                        Đặt hàng
+                                    </button>
+                                </div>
+                            </div>
+                            <div>
+                                @{
+                                    //Get Config Info
+                                    string vnp_Returnurl = "http://localhost:51290/KhachHang/VnpayReturn"; //URL nhan ket qua tra ve
+                                    string vnp_Url = "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html"; //URL thanh toan cua VNPAY
+                                    string vnp_TmnCode = "A8Y8P0Y8"; //Ma website
+                                    string vnp_HashSecret = "CWHYNXKKLQTCCTQXEKOIDOOFEOVWNSJN"; //Chuoi bi mat
+
+                                    //Build URL for VNPAY
+                                    VnPayLibrary vnpay = new VnPayLibrary();
+
+                                    vnpay.AddRequestData("vnp_Version", "2.1.0");
+                                    vnpay.AddRequestData("vnp_Command", "pay");
+                                    vnpay.AddRequestData("vnp_TmnCode", vnp_TmnCode);
+                                    int s = (int)sum * 100;
+                                    vnpay.AddRequestData("vnp_Amount", (s).ToString()); //Số tiền thanh toán. Số tiền không mang các ký tự phân tách thập phân, phần nghìn, ký tự tiền tệ. Để gửi số tiền thanh toán là 100,000 VND (một trăm nghìn VNĐ) thì merchant cần nhân thêm 100 lần (khử phần thập phân), sau đó gửi sang VNPAY là: 10000000
+                                    vnpay.AddRequestData("vnp_BankCode", "VNBANK");
+                                    vnpay.AddRequestData("vnp_CreateDate", DateTime.Now.ToString("yyyyMMddHHmmss"));
+                                    vnpay.AddRequestData("vnp_CurrCode", "VND");
+                                    vnpay.AddRequestData("vnp_IpAddr", Utils.GetIpAddress());
+                                    vnpay.AddRequestData("vnp_Locale", "vn");
+                                    vnpay.AddRequestData("vnp_OrderInfo", "Thanh toan don hang");
+                                    vnpay.AddRequestData("vnp_OrderType", "other"); //default value: other
+                                    vnpay.AddRequestData("vnp_ReturnUrl", vnp_Returnurl);
+                                    vnpay.AddRequestData("vnp_TxnRef", Guid.NewGuid().ToString()); // Mã tham chiếu của giao dịch tại hệ thống của merchant. Mã này là duy nhất dùng để phân biệt các đơn hàng gửi sang VNPAY. Không được trùng lặp trong ngày
+                                    //Add Params of 2.1.0 Version
+                                    vnpay.AddRequestData("vnp_ExpireDate", DateTime.Now.AddMinutes(15).ToString("yyyyMMddHHmmss"));
+                                    string paymentUrl = vnpay.CreateRequestUrl(vnp_Url, vnp_HashSecret);
+                                }
+                                <!-- Thẻ VNPay -->
+                                <form method="post" action="@paymentUrl" id="frmVNPay" style="display:none;"></form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/main.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.18.0/js/md5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.js-btn-plus, .js-btn-minus').click(function () {
+            // Lấy itemId từ thuộc tính data
+            var itemId = $(this).data('item-id');
+            var inputQuantity = $(this).closest('.input-group').find('.js-quantity-input');
+            var currentQuantity = parseInt(inputQuantity.val());
+
+            // Tăng/giảm giá trị số lượng tùy thuộc vào nút được nhấn
+            var newQuantity = $(this).hasClass('js-btn-plus') ? currentQuantity + 1 : currentQuantity - 1;
+            // Cập nhật giá trị số lượng hiển thị
+            // Gửi yêu cầu đến server để cập nhật số lượng
+            $.post('/KhachHang/UpdateQuantity', { itemId: itemId, newQuantity: newQuantity }, function (response) {
+                // Xử lý phản hồi từ server nếu cần
+                console.log(response);
+                location.reload();
+            });
+        });
+        $('#btnDatHang').click(function () {
+            var sum = parseFloat('@sum');
+            var tt = $('input[name="ThanhToan"]:checked').val();
+            // Gửi yêu cầu đặt hàng thông qua Ajax
+            if (sum != 0)
+                if (tt == 0) {
+                    $.post('/KhachHang/DatHang', { tt: tt, sum: sum }, function () {
+                        // Chuyển hướng sau khi đặt hàng thành công
+                        window.location.href = '/KhachHang/DatHangThanhCong';
+                    });
+                }
+                else {
+                    $('#frmVNPay').submit();
+                }
+        });
+    });
+</script>

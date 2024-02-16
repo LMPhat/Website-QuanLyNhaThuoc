@@ -1,0 +1,111 @@
+﻿@{
+    ViewBag.Title = "DoiPass";
+    Layout = "~/Views/Shared/_LayoutKhachHang.cshtml";
+}
+
+@using DoAnChuyenNganh_WebNhaThuoc.Models;
+@model KhachHang
+
+<html lang="en">
+<head>
+    <title>Cart</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,700|Crimson+Text:400,400i" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    @if (ViewBag.ErrorMessage != null)
+    {
+        <div class="alert alert-danger">
+            @ViewBag.ErrorMessage
+        </div>
+    }
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row text-black">
+                <div class="col-xl-8 ftco-animate billing-form ftco-bg-dark p-2 p-md-4" style="margin-left:200px; margin-top:-50px">
+                    <form action="/KhachHang/DoiPass" method="post" class="">
+                        <h3 class="mb-4 billing-heading text-center">Thay đổi Mật khẩu</h3>
+                        <div class="row align-items-end">
+                            <input type="hidden" name="username" value="@Model.UserName" placeholder="" required="" />
+                            <div class="u-form-group u-form-group-3" style="margin-left: 28%; margin-top: 10px; width: 300px; ">
+                                <label for="password" class="u-label">Mật khẩu mới (*)</label>
+                                <input type="password" placeholder="Nhập Mật khẩu" id="password" name="password" class="form-control" required="">
+                            </div>
+                            <div class="u-form-group u-form-group-3" style="margin-left: 28%; margin-top: 10px; width: 300px; ">
+                                <label for="confirmpassword" class="u-label">Xác nhận Mật khẩu mới (*)</label>
+                                <input type="password" placeholder="Nhập xác nhận lại Mật khẩu" id="confirmpassword" name="confirmpassword" class="form-control" required="" oninput="validatePassword()">
+                                <span id="error-msg" style="color: red; display: none;">Mật khẩu không khớp</span>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="u-align-center u-form-group u-form-submit" style="margin-left: 42%;">
+                            <input type="submit" value="Xác nhận" class="u-form-control-hidden btn btn-primary py-3 px-4">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+@if (TempData["LoginMessage"] != null)
+{
+    if (TempData["LoginMessage"] == "Đổi mật khẩu thành công")
+    {
+        <script>
+            alert("Đổi mật khẩu thành công");
+        </script>
+    }
+    else
+    {
+        <script>
+            alert("Mật khẩu thay đổi thất bại!");
+        </script>
+    }
+}
+
+<script>
+
+    function validatePassword() {
+        var password = document.getElementById("password");
+        var confirmPassword = document.getElementById("confirmpassword");
+        var error = document.getElementById("error-msg");
+
+        if (password.value !== confirmPassword.value) {
+            //error.innerHTML = "Passwords do not match";
+            error.style.display = "block";
+        } else {
+            //error.innerHTML = "";
+            error.style.display = "none";
+        }
+    }
+
+</script>
+
+<script src="~/js/jquery.min.js"></script>
+<script src="~/js/jquery-migrate-3.0.1.min.js"></script>
+<script src="~/js/popper.min.js"></script>
+<script src="~/js/bootstrap.min.js"></script>
+<script src="~/js/jquery.easing.1.3.js"></script>
+<script src="~/js/jquery.waypoints.min.js"></script>
+<script src="~/js/jquery.stellar.min.js"></script>
+<script src="~/js/owl.carousel.min.js"></script>
+<script src="~/js/jquery.magnific-popup.min.js"></script>
+<script src="~/js/aos.js"></script>
+<script src="~/js/jquery.animateNumber.min.js"></script>
+<script src="~/js/bootstrap-datepicker.js"></script>
+<script src="~/js/jquery.timepicker.min.js"></script>
+<script src="~/js/scrollax.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+<script src="~/js/google-map.js"></script>
+<script src="~/js/main.js"></script>

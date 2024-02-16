@@ -1,0 +1,519 @@
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\DoAnChuyenNganh_WebNhaThuoc.dll.config
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\DoAnChuyenNganh_WebNhaThuoc.dll
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\DoAnChuyenNganh_WebNhaThuoc.pdb
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Antlr3.Runtime.dll
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\EntityFramework.dll
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\EntityFramework.SqlServer.dll
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.Core.dll
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.dll
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Cookies.dll
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.dll
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Facebook.dll
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Google.dll
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.OAuth.dll
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Twitter.dll
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Web.Infrastructure.dll
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Newtonsoft.Json.dll
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Owin.dll
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Helpers.dll
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Mvc.dll
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Optimization.dll
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Razor.dll
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.Deployment.dll
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.dll
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.Razor.dll
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\WebGrease.dll
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Helpers.xml
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Mvc.xml
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Optimization.xml
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Razor.xml
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.xml
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.Deployment.xml
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.Razor.xml
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Newtonsoft.Json.xml
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Antlr3.Runtime.pdb
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\EntityFramework.xml
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\EntityFramework.SqlServer.xml
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.Core.xml
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.xml
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.xml
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Facebook.xml
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Cookies.xml
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.OAuth.xml
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Google.xml
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Twitter.xml
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\obj\Debug\DoAnChuyenNganh_WebNhaThuoc.csprojResolveAssemblyReference.cache
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\obj\Debug\DoAnChuyenNganh_WebNhaThuoc.dll
+D:\DoAnChuyenNganh\DoAn\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\obj\Debug\DoAnChuyenNganh_WebNhaThuoc.pdb
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\DoAnChuyenNganh_WebNhaThuoc.dll.config
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\DoAnChuyenNganh_WebNhaThuoc.dll
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\DoAnChuyenNganh_WebNhaThuoc.pdb
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Antlr3.Runtime.dll
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\EntityFramework.dll
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\EntityFramework.SqlServer.dll
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.Core.dll
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.dll
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Cookies.dll
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.dll
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Facebook.dll
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Google.dll
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.OAuth.dll
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Twitter.dll
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Web.Infrastructure.dll
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Newtonsoft.Json.dll
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Owin.dll
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Helpers.dll
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Mvc.dll
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Optimization.dll
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Razor.dll
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.Deployment.dll
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.dll
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.Razor.dll
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\WebGrease.dll
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Helpers.xml
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Mvc.xml
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Optimization.xml
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Razor.xml
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.xml
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.Deployment.xml
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.Razor.xml
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Newtonsoft.Json.xml
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Antlr3.Runtime.pdb
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\EntityFramework.xml
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\EntityFramework.SqlServer.xml
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.Core.xml
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.xml
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.xml
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Facebook.xml
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Cookies.xml
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.OAuth.xml
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Google.xml
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Twitter.xml
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\obj\Debug\DoAnChuyenNganh_WebNhaThuoc.csprojResolveAssemblyReference.cache
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\obj\Debug\DoAnChuyenNganh_WebNhaThuoc.dll
+D:\DoAnChuyenNganh\Mau\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\obj\Debug\DoAnChuyenNganh_WebNhaThuoc.pdb
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\DoAnChuyenNganh_WebNhaThuoc.dll.config
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\DoAnChuyenNganh_WebNhaThuoc.dll
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\DoAnChuyenNganh_WebNhaThuoc.pdb
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Antlr3.Runtime.dll
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\EntityFramework.dll
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\EntityFramework.SqlServer.dll
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.Core.dll
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.dll
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Cookies.dll
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.dll
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Facebook.dll
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Google.dll
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.OAuth.dll
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Twitter.dll
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Web.Infrastructure.dll
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Newtonsoft.Json.dll
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Owin.dll
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Helpers.dll
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Mvc.dll
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Optimization.dll
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Razor.dll
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.Deployment.dll
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.dll
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.Razor.dll
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\WebGrease.dll
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Helpers.xml
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Mvc.xml
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Optimization.xml
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Razor.xml
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.xml
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.Deployment.xml
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.Razor.xml
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Newtonsoft.Json.xml
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Antlr3.Runtime.pdb
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\EntityFramework.xml
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\EntityFramework.SqlServer.xml
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.Core.xml
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.xml
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.xml
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Facebook.xml
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Cookies.xml
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.OAuth.xml
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Google.xml
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Twitter.xml
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\obj\Debug\DoAnChuyenNganh_WebNhaThuoc.csprojResolveAssemblyReference.cache
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\obj\Debug\DoAnChuyenNganh_WebNhaThuoc.dll
+E:\DoAnNhaThuoc\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\obj\Debug\DoAnChuyenNganh_WebNhaThuoc.pdb
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\DoAnChuyenNganh_WebNhaThuoc.dll.config
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\DoAnChuyenNganh_WebNhaThuoc.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\DoAnChuyenNganh_WebNhaThuoc.pdb
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Antlr3.Runtime.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\EntityFramework.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\EntityFramework.SqlServer.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.Core.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Cookies.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Facebook.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Google.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.OAuth.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Twitter.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Web.Infrastructure.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Newtonsoft.Json.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Owin.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Helpers.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Mvc.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Optimization.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Razor.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.Deployment.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.Razor.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\WebGrease.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Helpers.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Mvc.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Optimization.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Razor.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.Deployment.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.Razor.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Newtonsoft.Json.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Antlr3.Runtime.pdb
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\EntityFramework.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\EntityFramework.SqlServer.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.Core.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Facebook.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Cookies.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.OAuth.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Google.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Twitter.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\obj\Debug\DoAnChuyenNganh_WebNhaThuoc.csprojResolveAssemblyReference.cache
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\obj\Debug\DoAnChuyenNganh_WebNhaThuoc.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\obj\Debug\DoAnChuyenNganh_WebNhaThuoc.pdb
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\DoAnChuyenNganh_WebNhaThuoc.dll.config
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\DoAnChuyenNganh_WebNhaThuoc.dll
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\DoAnChuyenNganh_WebNhaThuoc.pdb
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Antlr3.Runtime.dll
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\EntityFramework.dll
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\EntityFramework.SqlServer.dll
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.Core.dll
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.dll
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Cookies.dll
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.dll
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Facebook.dll
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Google.dll
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.OAuth.dll
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Twitter.dll
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Web.Infrastructure.dll
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Newtonsoft.Json.dll
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Owin.dll
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Helpers.dll
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Mvc.dll
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Optimization.dll
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Razor.dll
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.Deployment.dll
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.dll
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.Razor.dll
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\WebGrease.dll
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Helpers.xml
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Mvc.xml
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Optimization.xml
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Razor.xml
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.xml
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.Deployment.xml
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.Razor.xml
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Newtonsoft.Json.xml
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Antlr3.Runtime.pdb
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\EntityFramework.xml
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\EntityFramework.SqlServer.xml
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.Core.xml
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.xml
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.xml
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Facebook.xml
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Cookies.xml
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.OAuth.xml
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Google.xml
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Twitter.xml
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\obj\Debug\DoAnChuyenNganh_WebNhaThuoc.csprojResolveAssemblyReference.cache
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\obj\Debug\DoAnChuyenNganh_WebNhaThuoc.dll
+E:\DOAN_NHATHUOC\New\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\obj\Debug\DoAnChuyenNganh_WebNhaThuoc.pdb
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\PagedList.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\PagedList.Mvc.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\PagedList.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\PagedList.Mvc.xml
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\DoAnChuyenNganh_WebNhaThuoc.dll.config
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\DoAnChuyenNganh_WebNhaThuoc.dll
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\DoAnChuyenNganh_WebNhaThuoc.pdb
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Antlr3.Runtime.dll
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\DocumentFormat.OpenXml.dll
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\EntityFramework.dll
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\EntityFramework.SqlServer.dll
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.Core.dll
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.dll
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Cookies.dll
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.dll
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Facebook.dll
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Google.dll
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.OAuth.dll
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Twitter.dll
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Web.Infrastructure.dll
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Newtonsoft.Json.dll
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Owin.dll
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\PagedList.dll
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\PagedList.Mvc.dll
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Helpers.dll
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Mvc.dll
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Optimization.dll
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Razor.dll
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.Deployment.dll
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.dll
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.Razor.dll
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\WebGrease.dll
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\PagedList.xml
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\PagedList.Mvc.xml
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Helpers.xml
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Mvc.xml
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Optimization.xml
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Razor.xml
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.xml
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.Deployment.xml
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.Razor.xml
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Newtonsoft.Json.xml
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Antlr3.Runtime.pdb
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\EntityFramework.xml
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\EntityFramework.SqlServer.xml
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.Core.xml
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.xml
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.xml
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Facebook.xml
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Cookies.xml
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.OAuth.xml
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Google.xml
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Twitter.xml
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\obj\Debug\DoAnChuyenNganh_WebNhaThuoc.csprojResolveAssemblyReference.cache
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\obj\Debug\DoAnChuyenNganh_WebNhaThuoc.dll
+D:\DoAnChuyenNganh\DoAn\DoAnNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\obj\Debug\DoAnChuyenNganh_WebNhaThuoc.pdb
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\DoAnChuyenNganh_WebNhaThuoc.dll.config
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\DoAnChuyenNganh_WebNhaThuoc.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\DoAnChuyenNganh_WebNhaThuoc.pdb
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Antlr3.Runtime.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\DocumentFormat.OpenXml.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\EntityFramework.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\EntityFramework.SqlServer.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.Core.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Cookies.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Facebook.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Google.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.OAuth.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Twitter.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Web.Infrastructure.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Newtonsoft.Json.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Owin.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\PagedList.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\PagedList.Mvc.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Helpers.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Mvc.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Optimization.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Razor.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.Deployment.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.Razor.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\WebGrease.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\PagedList.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\PagedList.Mvc.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Helpers.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Mvc.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Optimization.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Razor.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.Deployment.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.Razor.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Newtonsoft.Json.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Antlr3.Runtime.pdb
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\EntityFramework.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\EntityFramework.SqlServer.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.Core.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Facebook.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Cookies.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.OAuth.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Google.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Twitter.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\obj\Debug\DoAnChuyenNganh_WebNhaThuoc.csprojResolveAssemblyReference.cache
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\obj\Debug\DoAnChuyenNganh_WebNhaThuoc.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\obj\Debug\DoAnChuyenNganh_WebNhaThuoc.pdb
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\DoAnChuyenNganh_WebNhaThuoc.dll.config
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\DoAnChuyenNganh_WebNhaThuoc.dll
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\DoAnChuyenNganh_WebNhaThuoc.pdb
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Antlr3.Runtime.dll
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\DocumentFormat.OpenXml.dll
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\EntityFramework.dll
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\EntityFramework.SqlServer.dll
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.Core.dll
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.dll
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Cookies.dll
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.dll
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Facebook.dll
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Google.dll
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.OAuth.dll
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Twitter.dll
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Web.Infrastructure.dll
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Newtonsoft.Json.dll
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Owin.dll
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\PagedList.dll
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\PagedList.Mvc.dll
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Helpers.dll
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Mvc.dll
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Optimization.dll
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Razor.dll
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.Deployment.dll
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.dll
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.Razor.dll
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\WebGrease.dll
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\PagedList.xml
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\PagedList.Mvc.xml
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Helpers.xml
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Mvc.xml
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Optimization.xml
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Razor.xml
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.xml
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.Deployment.xml
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.Razor.xml
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Newtonsoft.Json.xml
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Antlr3.Runtime.pdb
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\EntityFramework.xml
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\EntityFramework.SqlServer.xml
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.Core.xml
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.xml
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.xml
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Facebook.xml
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Cookies.xml
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.OAuth.xml
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Google.xml
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Twitter.xml
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\obj\Debug\DoAnChuyenNganh_WebNhaThuoc.csprojResolveAssemblyReference.cache
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\obj\Debug\DoAnChuyenNganh_WebNhaThuoc.dll
+E:\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\obj\Debug\DoAnChuyenNganh_WebNhaThuoc.pdb
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\DoAnChuyenNganh_WebNhaThuoc.dll.config
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\DoAnChuyenNganh_WebNhaThuoc.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\DoAnChuyenNganh_WebNhaThuoc.pdb
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Antlr3.Runtime.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\DocumentFormat.OpenXml.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\EntityFramework.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\EntityFramework.SqlServer.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.Core.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Cookies.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Facebook.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Google.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.OAuth.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Twitter.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Web.Infrastructure.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Newtonsoft.Json.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Owin.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\PagedList.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\PagedList.Mvc.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Helpers.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Mvc.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Optimization.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Razor.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.Deployment.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.Razor.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\WebGrease.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\PagedList.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\PagedList.Mvc.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Helpers.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Mvc.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Optimization.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.Razor.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.Deployment.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\System.Web.WebPages.Razor.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Newtonsoft.Json.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Antlr3.Runtime.pdb
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\EntityFramework.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\EntityFramework.SqlServer.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.Core.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Facebook.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Cookies.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.OAuth.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Google.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.Twitter.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\obj\Debug\DoAnChuyenNganh_WebNhaThuoc.csprojResolveAssemblyReference.cache
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\obj\Debug\DoAnChuyenNganh_WebNhaThuoc.dll
+D:\DoAnChuyenNganh\DoAn\New folder\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\DoAnChuyenNganh_WebNhaThuoc\obj\Debug\DoAnChuyenNganh_WebNhaThuoc.pdb

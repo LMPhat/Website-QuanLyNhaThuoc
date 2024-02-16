@@ -1,0 +1,163 @@
+﻿
+@{
+    ViewBag.Title = "ChiTietPN";
+    Layout = "~/Views/Shared/_LayoutQuanLy.cshtml";
+    
+    float sum = 0;
+    float thanhtien = 0;
+    NhaCungCap ncc = ViewBag.ncc;
+    var nfi = new System.Globalization.NumberFormatInfo { NumberGroupSeparator = "." };
+
+    PhieuNhap pn = ViewBag.mapn;
+}
+@using DoAnChuyenNganh_WebNhaThuoc.Models;
+@model List<ChiTietPN>
+
+<html lang="en">
+<head>
+    <title>Cart</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,700|Crimson+Text:400,400i" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="site-section" style="margin-top:-150px;">
+        <div class="container">
+            <div class="row mb-5">
+                <form class="col-md-12" method="post">
+                    <div class="site-blocks-table">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th class="product-thumbnail">Hình ảnh</th>
+                                    <th class="product-name" width="250">Tên sản phẩm</th>
+                                    <th class="product-price">Giá nhập</th>
+                                    <th class="product-quantity">Số lượng nhập</th>
+                                    <th class="product-total">Tổng tiền</th>
+                                </tr>
+                            </thead>
+                            @foreach (var item in Model)
+                            {
+                                <tbody data-item-id="@item.MaSP">
+                                    <tr class="product">
+                                        <td class=" product-thumbnail">
+                                            <img src="/HinhAnh/@item.SanPham.HinhAnh" alt="Image" class="img-fluid">
+                                        </td>
+                                        <td class="u-align-left u-border-1 u-border-grey-30 u-table-cell u-table-cell-12">
+                                            @item.SanPham.TenSP                                        
+                                        </td>
+                                        <td>@item.GiaNhap.ToString("#,##", nfi) VND</td>
+                                        <td>
+                                            <div class="input-group mb-3" style="max-width: 150px;">
+                                                <input type="text" class="form-control text-center  js-quantity-input" value="@item.SoLuongNhap" placeholder="" min="1" max="@item.SanPham.SoLuong" readonly
+                                                       aria-label="Example text with button addon" aria-describedby="button-addon1">
+                                            </div>
+                                        </td>
+                                        @{
+                                            thanhtien = item.GiaNhap * item.SoLuongNhap;
+                                            sum += thanhtien;
+                                        }
+                                        <td class="product-total">@thanhtien.ToString("#,##", nfi) VND</td>
+                                    </tr>
+                                </tbody>
+                            }
+                        </table>
+                    </div>
+                </form>
+            </div>
+
+            <div class="row ">
+                <div class="col-md-6">
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-12 text-center d-flex border-bottom mb-5">
+                                <h3 class="text-black h4 text-uppercase">Thông tin nhà cung cấp</h3>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-12" style="padding-bottom:15px;">
+                                <span class="text-black h5 icon icon-person">&nbsp;&nbsp;@ncc.TenNCC</span>
+                            </div>
+                            <div class="col-md-12" style="padding-bottom:15px;">
+                                <span class="text-black icon icon-phone h5">&nbsp;&nbsp;@ncc.SoDienThoai</span>
+                            </div>
+                            <div class="col-md-12">
+                                <span class="text-black h5 icon icon-map-marker">&nbsp;&nbsp;@ncc.DiaChi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 pl-5">
+                    <div class="row justify-content-end">
+                        <div class="col-md-8">
+                            <div class="row">
+                                <div class="col-md-6 text-left border-bottom mb-5">
+                                    <h3 class="text-black h4 text-uppercase">Tổng tiền</h3>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-8">
+                                    <strong class="text-danger h5">@sum.ToString("#,##", nfi) VND</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.js-btn-plus, .js-btn-minus').click(function () {
+            // Lấy itemId từ thuộc tính data
+            var itemId = $(this).data('item-id');
+            var inputQuantity = $(this).closest('.input-group').find('.js-quantity-input');
+            var currentQuantity = parseInt(inputQuantity.val());
+
+            // Tăng/giảm giá trị số lượng tùy thuộc vào nút được nhấn
+            var newQuantity = $(this).hasClass('js-btn-plus') ? currentQuantity + 1 : currentQuantity - 1;
+            // Cập nhật giá trị số lượng hiển thị
+            // Gửi yêu cầu đến server để cập nhật số lượng
+            $.post('/KhachHang/UpdateQuantity', { itemId: itemId, newQuantity: newQuantity }, function (response) {
+                // Xử lý phản hồi từ server nếu cần
+                console.log(response);
+                location.reload();
+            });
+        });
+        $('#btnDatHang').click(function () {
+            var sum = parseFloat('@sum');
+            var tt = $('input[name="ThanhToan"]:checked').val();
+            // Gửi yêu cầu đặt hàng thông qua Ajax
+            if (sum != 0) {
+                $.post('/KhachHang/DatHang', { tt: tt, sum: sum }, function () {
+                    // Chuyển hướng sau khi đặt hàng thành công
+                    window.location.href = '/KhachHang/DatHangThanhCong';
+                });
+            }
+        });
+    });
+
+</script>

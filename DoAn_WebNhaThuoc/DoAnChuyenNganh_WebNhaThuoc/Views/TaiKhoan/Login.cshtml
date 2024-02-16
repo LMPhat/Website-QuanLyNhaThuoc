@@ -1,0 +1,72 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_LayoutKhachHang.cshtml";
+}
+
+<body>
+    <div class="site-section">
+        <div class="container">
+            <div class="row" style="margin-top: -100px; margin-left:30%; border: 1px solid #ccc; border-radius: 10px; width:50%;">
+                @*<div class="col-md-12" >
+                    
+                </div>*@
+                <h1 class="h3 text-black" style="margin-left:35%; margin-top:10px;">Đăng Nhập</h1>
+                <div class="col-md-12" style="margin-top:2%; margin-left:25%;">
+
+                    <form action="/TaiKhoan/Login" method="post">
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                                <label for="c_fname" class="text-black">Tên đăng nhập <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="c_fname" name="username" placeholder="Nhập tên đăng nhập" required="">
+                            </div>
+
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                                <label for="c_lname" class="text-black">Mật khẩu <span class="text-danger">*</span></label>
+                                <input type="password" class="form-control" id="c_lname" name="password" placeholder="Nhập mật khẩu" required="">
+                            </div>
+                        </div>
+
+                        @*<div class="p-3 p-lg-5">
+                            
+                            <div class="form-group row">
+                            <div class="col-md-12">
+                                <label for="c_subject" class="text-black">Subject </label>
+                                <input type="text" class="form-control" id="c_subject" name="c_subject">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <label for="c_message" class="text-black">Message </label>
+                                <textarea name="c_message" id="c_message" cols="30" rows="7" class="form-control"></textarea>
+                            </div>
+                        </div>
+                        
+                        </div>*@
+                        <br />
+                        <div class="form-group row">
+                            <div class="col-lg-4" style="margin-left:8%;">
+                                @*<a href="#" class="btn btn-primary">Đăng nhập</a>*@
+                                <input type="submit" class="btn btn-primary btn-block" value="Đăng nhập">
+                            </div>
+                        </div>
+                    </form>
+                    <p class="" style="margin-left: 38%; margin-top: 5%; font-size:16px;">
+                        <a class="text-info"  href="/TaiKhoan/Register">Bạn chưa có tài khoản ?</a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+@if (TempData["LoginMessage"] != null)
+{
+    <script>
+        alert("Tài khoản của bạn không tồn tại!");
+    </script>
+}

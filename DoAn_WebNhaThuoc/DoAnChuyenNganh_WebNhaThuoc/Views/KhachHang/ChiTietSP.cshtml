@@ -1,0 +1,90 @@
+﻿@{
+    ViewBag.Title = "ChiTietSP";
+    Layout = "~/Views/Shared/_LayoutKhachHang.cshtml";
+
+    var nfi = new System.Globalization.NumberFormatInfo { NumberGroupSeparator = "." };
+
+    ChiTietSanPham sp = ViewBag.masp;
+}
+
+@using DoAnChuyenNganh_WebNhaThuoc.Models;
+@model SanPham
+
+<body>
+    <div class="site-section" style="margin-top:-150px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 mr-auto">
+                    <div class="border text-center">
+                        <img src="/HinhAnh/@Model.HinhAnh" alt="Image" class="img-fluid p-5">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <form action="/KhachHang/ChonMua" method="post">
+                        <input type="hidden" name="MaSP" value="@Model.MaSP">
+                        <h2 class="text-black">@Model.TenSP</h2>
+                        <p>Xuất xứ: <b>@Model.NuocSX</b></p>
+                        <p>Số Lượng: <b>@Model.SoLuong</b></p>
+                        <p><strong class="text-danger h4">@Model.GiaBan.ToString("#,##", nfi) VND</strong></p>
+
+
+                        <div class="mb-5">
+                            <div class="input-group mb-3" style="max-width: 220px;">
+                                <div class="input-group-prepend">
+                                    <button class="btn btn-outline-primary js-btn-minus" type="button">&minus;</button>
+                                </div>
+                                <input type="text" class="form-control text-center" name="sl" value="1" min=1 max=@Model.SoLuong placeholder=""
+                                       aria-label="Example text with button addon" aria-describedby="button-addon1" readonly>
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-primary js-btn-plus" type="button">&plus;</button>
+                                </div>
+                            </div>
+                        </div>
+                        <p>
+                            <button class="buy-now btn btn-sm height-auto px-4 py-3 btn-primary" type="submit" value="">Thêm vào giỏ hàng</button>
+                            @*<a href="/KhachHang/ChonMua/@Model.MaSP?sl" class="buy-now btn btn-sm height-auto px-4 py-3 btn-primary">Thêm vào giỏ hàng</a>*@
+                        </p>
+                    </form>
+                </div>
+
+            </div>
+            <div class="row" style="margin-top:5%;">
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <table class="table custom-table">
+                            <thead>
+                            <th colspan="2"> <b>Thông tin sản phẩm</b></th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td width="130">Thành phần:</td>
+                                    <td>@sp.ThanhPhan</td>
+                                </tr>
+                                <tr>
+                                    <td>Công dụng:</td>
+                                    <td>@sp.CongDung</td>
+                                </tr>
+                                <tr>
+                                    <td>Lưu ý:</td>
+                                    <td>@sp.LuuY</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+@if (ViewBag.Er == "Số lượng không nhỏ hơn 0")
+{
+    <script>
+        alert("Số lượng không nhỏ hơn 0");
+    </script>
+}
+@if ("Số lượng trong giỏ hàng không được vượt số lượng trong kho" == ViewBag.Er)
+{
+    <script>
+        alert("Số lượng trong giỏ hàng không được vượt số lượng trong kho");
+    </script>
+}

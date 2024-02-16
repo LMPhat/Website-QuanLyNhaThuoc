@@ -1,0 +1,171 @@
+﻿@{
+    ViewBag.Title = "Danh mục";
+    Layout = "~/Views/Shared/_LayoutQuanLy.cshtml";
+
+    var nfi = new System.Globalization.NumberFormatInfo { NumberGroupSeparator = "." };
+}
+
+@using DoAnChuyenNganh_WebNhaThuoc.Models;
+@model List<DanhMucSP>
+
+<body>
+    
+    <section style="margin-top:-100px;">
+        @if (ViewBag.ErrorMessage != null)
+        {
+            <div class="alert alert-danger">
+                @ViewBag.ErrorMessage
+            </div>
+        }
+        <div style="margin-bottom:30px;" class="d-flex align-items-center">
+            <h2 class="text-dark font-weight-bold">Danh sách danh mục</h2>
+            <a href="#" class="btn btn-primary h-75"
+               data-toggle="modal" data-target="#addProductModal" style="margin-left:60%;">THÊM MỚI</a>
+            <!-- Modal cho sản phẩm cụ thể -->
+            <form method="post" action="/QuanLy/ThemDM" enctype="multipart/form-data">
+                <div class="modal fade" style="margin-top:100px;" id="addProductModal" tabindex="-1" role="dialog" aria-labelledby="addProductModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-black font-weight-bold" id="addProductModalLabel">Thêm Danh Mục</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body text-xl-left" style="color:gray;">
+                                <!-- Hiển thị thông tin sản phẩm -->
+                                <div class="editor-label">
+                                    Tên Danh Mục
+                                </div>
+                                <div class="editor-field">
+                                    <input type="text" name="tenDM" placeholder="Nhập tên danh mục..." required="" />
+                                    @Html.ValidationMessage("tenDM", "", new { @class = "text-danger" })
+                                </div>
+
+                                @*<div class="editor-label">
+                                    ADDRESS
+                                </div>
+                                <div class="editor-field">
+                                    <input type="text" name="diaChi" placeholder="Nhập địa chỉ..." required="" />
+                                    @Html.ValidationMessage("diaChi", "", new { @class = "text-danger" })
+                                </div>
+
+                                <div class="editor-label">
+                                    PHONE
+                                </div>
+                                <div class="editor-field">
+                                    <input type="number" oninput="validateNumber(this)" name="sdt" pattern="\+?\d{0,2}[\s\(\-]?([0-9]{3})[\s\)\-]?([\s\-]?)([0-9]{3})[\s\-]?([0-9]{2})[\s\-]?([0-9]{2})" placeholder="Nhập số điện thoại..." id="phone-6b30" required="" maxlength="10">
+                                    <span id="error-msg" style="color: red; display: none;">Số điện thoại cần phải đủ 10 số</span>
+                                    @Html.ValidationMessage("sdt", "", new { @class = "text-danger" })
+                                </div>*@
+                                @*<div class="editor-field">
+                                <input type="number" oninput="validateNumber(this)" name="sdt" pattern="\+?\d{0,2}[\s\(\-]?([0-9]{3})[\s\)\-]?([\s\-]?)([0-9]{3})[\s\-]?([0-9]{2})[\s\-]?([0-9]{2})" placeholder="Nhập số điện thoại..." id="phone-6b30" required="" maxlength="10">
+                                @Html.ValidationMessage("sdt", "", new { @class = "text-danger" })
+                            </div>*@
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                                <button type="submit" class="btn btn-danger">Lưu</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="u-expanded-width u-table u-table-responsive u-table-1">
+            <table class="table table-bordered">
+                <colgroup>
+                    <col width="3.2%">
+                    <col width="12.8%">
+                    <col width="8.8%">
+                </colgroup>
+                <thead class="table-primary text-dark" style="text-align:center;">
+                    <tr style="height: 85px;">
+                        <th class="product-name">Mã Danh Mục</th>
+                        <th class="product-name">Tên Danh Mục</th>
+                        <th class="product-remove"></th>
+                    </tr>
+                </thead>
+                @foreach (var item in Model)
+                {
+                    <tbody class="text-black">
+                        <tr style="height: 100px;">
+                            <td class="product-name">@item.MaDM</td>
+                            <td class="product-name">@item.TenDM</td>
+                            
+                            <td style="text-align:center;">
+                                @*<div><a href="/QuanLy/SuaSP/@item.MaDM" class="btn btn-secondary" style="margin-bottom:10px;">UPDATE</a></div>*@
+                                <a href="#" class="btn btn-secondary" style="margin-bottom:10px;"
+                                   data-toggle="modal" data-target="#updateModal-@item.MaDM.Replace(" ", "-").Replace("#", "")" data-madm="@item.MaDM">
+                                    <i class="icon icon-pencil"></i>
+                                </a>
+                                <!-- Modal cho sản phẩm cụ thể -->
+                                <form method="post" action="/QuanLy/SuaDM" enctype="multipart/form-data">
+                                    <div class="modal fade" id="updateModal-@item.MaDM.Replace(" ", "-").Replace("#", "")" style="margin-top:60px;" data-madm="@item.MaDM" tabindex="-1" role="dialog" aria-labelledby="addProductModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title text-black font-weight-bold" id="addProductModalLabel">Cập Nhật Danh Mục</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body text-xl-left" style="color:gray;">
+                                                    <!-- Hiển thị thông tin sản phẩm -->
+                                                    <p>Mã Danh Mục: <span style="color:black;"> @item.MaDM </span></p>
+                                                    <input type="hidden" name="MaDM" value="@item.MaDM">
+                                                    <div class="editor-label">
+                                                        Tên Danh Mục
+                                                    </div>
+                                                    <div class="editor-field">
+                                                        <input type="text" name="TenDM" placeholder="Nhập tên danh mục..." value="@item.TenDM" required="" />
+                                                        @Html.ValidationMessage("TenDM", "", new { @class = "text-danger" })
+                                                    </div>
+
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                                                    <button type="submit" class="btn btn-danger">Lưu</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                                @*<div><a href="/QuanLy/XoaSP/@item.MASP" class="btn btn-danger">DELETE</a></div>*@
+                                <a href="#" class="btn btn-danger" style="margin-bottom:10px;"
+                                   data-toggle="modal" data-target="#deleteModal-@item.MaDM.Replace(" ", "-").Replace("#", "")" data-maloai="@item.MaDM">
+                                    <i class="icon icon-delete_sweep"></i>
+                                </a>
+                                <!-- Modal cho sản phẩm cụ thể -->
+                                <form method="post" action="/QuanLy/XoaDM" enctype="multipart/form-data">
+                                    <div class="modal fade" style="margin-top:60px;" id="deleteModal-@item.MaDM.Replace(" ", "-").Replace("#", "")" data-maloai="@item.MaDM" tabindex="-1" role="dialog" aria-labelledby="addProductModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title text-black font-weight-bold" id="addProductModalLabel">Xóa Danh Mục</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body text-xl-left" style="color:gray;">
+                                                    <!-- Hiển thị thông tin sản phẩm -->
+                                                    <p>Bạn có đồng ý xóa danh mục<span style="color:black;"> @item.TenDM </span> không?</p>
+                                                    <input type="hidden" name="MaDM" value="@item.MaDM">
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                                                    <button type="submit" class="btn btn-danger">Xóa</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </td>
+                        </tr>
+                    </tbody>
+                }
+            </table>
+
+        </div>
+    </section>
+</body>

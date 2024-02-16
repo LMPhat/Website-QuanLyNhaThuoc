@@ -1,0 +1,160 @@
+﻿
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_LayoutKhachHang.cshtml";
+}
+@using DoAnChuyenNganh_WebNhaThuoc.Models;
+<body>
+    <div class="site-section">
+        <div class="container">
+            <div class="row" style="margin-top: -100px; margin-left:30%; border: 1px solid #ccc; border-radius: 10px; width:50%;">
+
+                <h1 class="h3 text-black" style="margin-left:35%; margin-top:10px;">Đăng Ký</h1>
+                <div class="col-md-12" style="margin-top:2%; margin-left:25%;">
+
+                    <form action="/TaiKhoan/Register" method="post">
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                                <label for="c_fname" class="text-black">Tên đăng nhập <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="c_fname" name="username" placeholder="Nhập tên đăng nhập" required="">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                                <label for="name" class="text-black">Họ tên người dùng <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Nhập họ tên người dùng" required="">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                                <label for="address" class="text-black">Địa chỉ <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="address" name="address" placeholder="Nhập địa chỉ" required="">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                                <label for="phone" class="text-black">Số điện thoại <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" oninput="validateNumber(this)" pattern="[0-9]*" maxlength="10" id="phone" name="phone" placeholder="Nhập số điện thoại" required="">
+                                <span id="error-phone" style="color: red; display: none;">Số điện thoại phải đủ 10 số</span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                                <label for="email" class="text-black">Email <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Nhập email" required="">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                                <label for="password" class="text-black">Mật khẩu <span class="text-danger">*</span></label>
+                                <input type="password" class="form-control" id="password" name="password" placeholder="Nhập mật khẩu" required="">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                                <label for="confirmPassword" class="text-black">Nhập lại mật khẩu <span class="text-danger">*</span></label>
+                                <input type="password" class="form-control" oninput="validatePassword()" id="confirmPassword" name="confirmPassword" placeholder="Nhập mật khẩu" required="">
+                                <span id="error-password" style="color: red; display: none;">Mật khẩu xác nhận không trùng khớp</span>
+                            </div>
+                        </div>
+
+                        <br />
+                        <div class="form-group row">
+                            <div class="col-lg-4" style="margin-left:8%;">
+                                @*<a href="#" class="btn btn-primary">Đăng nhập</a>*@
+                                <input type="submit" class="btn btn-primary btn-block" value="Xác nhận">
+                            </div>
+                        </div>
+                    </form>
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+@if (TempData["LoginMessage"] == "Mật khẩu xác nhận không trùng khớp !")
+{
+    <script>
+        alert("Mật khẩu xác nhận không trùng khớp !");
+    </script>
+}
+
+@{
+    if (TempData["LoginMessage"] == "Loi_1")
+    {
+        <script>
+            alert("Tên tài khoản đã tồn tại!");
+        </script>
+    }
+    else
+    {
+        if (TempData["LoginMessage"] == "Them_TC")
+        {
+            
+        }
+        else
+        {
+            if (TempData["SuaLoi_SDT"] != null && TempData["SuaLoi_Email"] != null)
+            {
+                <script>
+                    alert("Số điện thoại và địa chỉ Email đã tồn tại!");
+                </script>
+            }
+            else
+            {
+                if (TempData["SuaLoi_SDT"] != null)
+                {
+                    <script>
+                        alert("Số điện thoại đã tồn tại!");
+                    </script>
+                }
+                else
+                {
+                    if (TempData["SuaLoi_Email"] != null)
+                    {
+                        <script>
+                            alert("Email đã tồn tại!");
+                        </script>
+                    }
+                    else
+                    {
+                        if (TempData["Loi_Rong"] != null)
+                        {
+                            <script>
+                                alert("Tên đăng nhập ít nhất có 1 ký tự!");
+                            </script>
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+<script>
+    function validateNumber(input) {
+        input.value = input.value.replace(/\D/g, "");
+        var error = document.getElementById("error-phone");
+        if (input.value.length !== 10) {
+            error.style.display = "block";
+        } else {
+            error.style.display = "none";
+        }
+    }
+
+    function validatePassword() {
+        var password = document.getElementById("password");
+        var confirmPassword = document.getElementById("confirmPassword");
+        var error = document.getElementById("error-password");
+
+        if (password.value !== confirmPassword.value) {
+            //error.innerHTML = "Passwords do not match";
+            error.style.display = "block";
+        } else {
+            //error.innerHTML = "";
+            error.style.display = "none";
+        }
+    }
+</script>

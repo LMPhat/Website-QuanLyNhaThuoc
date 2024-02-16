@@ -1,0 +1,228 @@
+﻿@{
+    ViewBag.Title = "Thống kê";
+    Layout = "~/Views/Shared/_LayoutQuanLy.cshtml";
+}
+
+<style>
+    .hide-chart {
+        display: none;
+    }
+
+    .show-chart {
+        display: block;
+    }
+</style>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<body>
+    <section style="margin-top:-100px;">
+        <div style="margin-bottom:30px;" class="d-flex align-items-center">
+            <h2 class="text-dark font-weight-bold">Thống kê doanh thu</h2>
+        </div>
+
+        <table class="table table-bordered">
+            <tr>
+                <td width="500">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <h4 class="text-dark font-weight-bold">Thống kê theo năm</h4><br />
+                                <form id="yearForm" method="post" action="/QuanLy/ThongKe" style="width:250px;">
+                                    <!-- Dropdown chọn năm -->
+                                    <select id="selectYear" name="selectedYear" onchange="submitForm()" style="height:30px;" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+                                        <option value="" selected disabled>Chọn năm thống kê</option>
+                                        <option value="2019">2019</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2023">2023</option>
+                                        <!-- Thêm các năm khác vào đây -->
+                                    </select>
+                                </form>
+                            </div>
+                            
+                        </div>
+                        <br />
+                        <div class="row">
+                            <canvas id="salesChart" height="180"></canvas>
+                        </div>
+
+                    </div>
+                </td>
+                <td>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <h4 class="text-dark font-weight-bold">Thống kê theo khoảng thời gian</h4>
+                                <form id="dateForm" method="post" action="/QuanLy/ThongKe_KhoangTG" style="width:250px;">
+
+                                    <div class="row" style="margin-bottom:10px;">
+                                        <div class="col-8">
+                                            <!-- Ô nhập thời gian bắt đầu -->
+                                            <input type="date" name="startDate" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" />
+                                        </div>
+
+                                        <div class="col-4">
+                                            <!-- Ô nhập thời gian kết thúc -->
+                                            <input type="date" name="endDate" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" />
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <!-- Nút "Thông kê" -->
+                                        <input type="submit" value="Thông kê" class="btn btn-primary" />
+                                    </div>
+                                </form>
+                                <div style="float:right; margin-top:-40px;">
+                                    <input type="submit" onclick="exportToExcel()" value="Excel" class="btn btn-primary" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <canvas id="dailySalesChart"></canvas>
+                            </div>
+                        </div>
+
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </section>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.5/xlsx.full.min.js"></script>
+
+<script>
+    function exportToExcel() {
+        debugger;
+        // Lấy dữ liệu từ biểu đồ hoặc nơi bạn muốn xuất
+        var dataToExport = dailySalesData;
+
+        // Thêm tiêu đề lớn
+        var title = [['Dữ liệu Thống kê Doanh thu']];
+
+        // Thêm tiêu đề và dữ liệu vào sheet
+        var dataWithHeader = title.concat(
+            [['Ngày', 'Tổng tiền']].concat(
+                dataToExport.map(function (item) {
+                    return [item.Date, item.TotalSales];
+                })
+            )
+        );
+
+        // Chuyển đổi dữ liệu thành bảng tính
+        var worksheet = XLSX.utils.aoa_to_sheet(dataWithHeader);
+
+        // Tạo workbook với một trang tính và đặt tên file Excel
+        var wb = XLSX.utils.book_new();
+        XLSX.utils.book_append_sheet(wb, worksheet, 'Sheet1');
+        var fileName = 'thongke.xlsx';
+
+        // Tạo blob từ workbook và tải file Excel
+        var blob = XLSX.write(wb, { bookType: 'xlsx', type: 'array' });
+        var excelBlob = new Blob([blob], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
+
+        saveAs(excelBlob, fileName);
+    }
+
+    // Thêm hàm saveAs để tạo và tải file
+    function saveAs(blob, fileName) {
+        var link = document.createElement('a');
+        link.href = window.URL.createObjectURL(blob);
+        link.download = fileName;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+    function submitForm() {
+        document.getElementById("yearForm").submit();
+
+    }
+    
+
+    // Dữ liệu mẫu cho biểu đồ
+    var months = ["Tháng 1", "Tháng 2", "Tháng 3", "Tháng 4", "Tháng 5", "Tháng 6", "Tháng 7", "Tháng 8", "Tháng 9", "Tháng 10", "Tháng 11", "Tháng 12"];
+    var salesData = [@Html.Raw(ViewBag.DoanhSoTheoThang)]; // Dữ liệu từ ViewBag
+
+    var ctx = document.getElementById('salesChart').getContext('2d');
+    var chart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: months,
+            datasets: [{
+                label: 'Doanh số bán hàng (VND)',
+                data: salesData,
+                //backgroundColor: [
+                //                    'rgba(255, 99, 132, 1)',
+                //                    'rgba(54, 162, 235, 1)',
+                //                    'rgba(255, 206, 86, 1)',
+                //                    'rgba(75, 192, 192, 1)',
+                //                    'rgba(153, 102, 255, 1)',
+                //                    'rgba(255, 159, 64, 1)',
+                //                    'rgba(255, 99, 132, 1)',
+                //                    'rgba(54, 162, 235, 1)',
+                //                    'rgba(255, 206, 86, 1)',
+                //                    'rgba(75, 192, 192, 1)',
+                //                    'rgba(153, 102, 255, 1)',
+                //                    'rgba(255, 159, 64, 1)'
+                //],
+                backgroundColor: 'rgba(255, 159, 64, 1)',
+                //borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+
+    // Dữ liệu mẫu cho biểu đồ theo khoảng thời gian
+    var dailySalesData = JSON.parse('@Html.Raw(ViewBag.DoanhSoTheoNgay)');
+
+    // Chuyển đổi dữ liệu JSON thành mảng JavaScript
+    var data = dailySalesData.map(function (item) {
+        return {
+            date: new Date(item.Date),
+            totalSales: item.TotalSales
+        };
+    });
+
+    var ctxDaily = document.getElementById('dailySalesChart').getContext('2d');
+    var dailyChart = new Chart(ctxDaily, {
+        type: 'line',
+        data: {
+            labels: data.map(function (item) {
+                return item.date.toLocaleDateString();
+            }),
+            datasets: [{
+                label: 'Doanh số bán hàng (VND)',
+                data: data.map(function (item) {
+                    return item.totalSales;
+                }),
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1,
+                fill: false
+            }]
+        },
+        options: {
+            scales: {
+                x: {
+                    type: 'linear',  // Thử sử dụng 'linear' thay vì 'time'
+                    position: 'bottom' // Thêm option position
+                },
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+    
+</script>

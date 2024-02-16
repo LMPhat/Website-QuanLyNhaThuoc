@@ -1,0 +1,63 @@
+﻿@{
+    ViewBag.Title = "CheckPass";
+    Layout = "~/Views/Shared/_LayoutKhachHang.cshtml";
+    KhachHang kh = ViewBag.kh;
+}
+@using DoAnChuyenNganh_WebNhaThuoc.Models;
+
+
+<html lang="en">
+<head>
+    <title>Kiểm tra mật khẩu</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,700|Crimson+Text:400,400i" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    @if (ViewBag.ErrorMessage != null)
+    {
+        <div class="alert alert-danger">
+            @ViewBag.ErrorMessage
+        </div>
+    }
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row text-black">
+                <div class="col-xl-8 ftco-animate billing-form p-2 p-md-4" style="margin-left:200px;">
+                    <form action="/KhachHang/KiemTraPass" method="post" class="">
+                        <h3 class="mb-4 billing-heading text-center">Thay đổi Mật khẩu</h3>
+                        <div class="row align-items-end">
+                            <input type="hidden" name="username" value="@kh.UserName" placeholder="" required="" />
+                            <div class="u-form-group u-form-group-3" style="margin-left: 28%; margin-top: 10px; width: 300px; ">
+                                <label for="text-cca6" class="u-label">Mật khẩu (*)</label>
+                                <input type="password" placeholder="Nhập Mật khẩu" id="text-cca6" name="password" class="form-control" required="">
+                            </div>
+                        </div>
+                        <br />
+                        <div class="u-align-center u-form-group u-form-submit" style="margin-left: 42%;">
+                            <input type="submit" value="Xác nhận" class="u-form-control-hidden btn btn-primary py-3 px-4">
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
+@if (TempData["LoginMessage"] != null)
+{
+    <script>
+        alert("Mật khẩu không chính xác!");
+    </script>
+}
